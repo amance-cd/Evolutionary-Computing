@@ -43,7 +43,7 @@ float evaluate_fitness(DNA *member, int k, float d, int type){
     float (*func)(DNA *, int, float);
     if (type == 1) func = count_ones;
     else if (type == 2 || type == 4) func = TL_trap_fitness;
-    else if (type == 3 || type == 5) func = non_TL_trap_fitness;
+    else func = non_TL_trap_fitness;
     return func(member, k, d);
 }
 

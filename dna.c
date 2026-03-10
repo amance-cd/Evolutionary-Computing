@@ -12,7 +12,7 @@ DNA *generate_member(int gen, int num, int k , float d, int type){
     }
     member->gen = gen;
     member->number = num;
-    member->fitness = evaluate_fitness(member, k, d, type);
+    member->fitness = 0;
     return member;
 }
 
@@ -30,6 +30,7 @@ Population *generate_population(int size, int gen, int k, float d, int type){
     for(int i = 0; i < size; i++){
         population->members[i] = generate_member(gen, i, k, d, type);
         generate_random_DNA(population->members[i]);
+        population->members[i]->fitness = evaluate_fitness(population->members[i], k, d, type);
     }
     return population;
 }
@@ -56,6 +57,8 @@ void generate_offsprings(Population *population, Population *new_population, int
         DNA *parent1 = population->members[i];
         DNA *parent2 = population->members[i+1];
         crossover_function(parent1, parent2, child1, child2, proba);
+        child1->fitness = evaluate_fitness(child1, k, d, type);
+        child2->fitness = evaluate_fitness(child2, k, d, type);
         new_population->members[i] = child1;
         new_population->members[i+1] = child2;
     }

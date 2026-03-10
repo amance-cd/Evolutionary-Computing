@@ -2,7 +2,7 @@
 
 //inputs
 Inputs input_function(){
-    int population_size, generations, crossover_type, counting_ones, deceptiveness, linkage;
+    int population_size, generations, crossover_type, counting_ones, deceptiveness, linkage, fitness_function_type;
     float crossover_probability = 0;
     int confirm_choice = 0;
 
@@ -63,7 +63,6 @@ Inputs input_function(){
                 scanf("%d", &linkage);
             }
         }
-        int fitness_function_type;
         if (counting_ones) {
             fitness_function_type = 1;
         } else if (deceptiveness && linkage) {
@@ -89,7 +88,7 @@ Inputs input_function(){
 
     } while (confirm_choice != 1);
 
-    return (Inputs){population_size, generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice};
+    return (Inputs){population_size, generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice, fitness_function_type};
 }
 
 void print_inputs(Inputs inputs) {

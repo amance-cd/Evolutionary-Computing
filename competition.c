@@ -1,8 +1,8 @@
 #include "competition.h"
 
 void sort_by_fitness_family(DNA *family[4], DNA **res1, DNA **res2){
-    float max1 = -1;
-    float max2 = -1;
+    float max1 = -1000000.0;
+    float max2 = -1000000.0;
     *res1 = NULL;
     *res2 = NULL;
     for (int i = 0; i < 4; i++){

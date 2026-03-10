@@ -107,14 +107,15 @@ int main() {
     srand(time(NULL)); // Seed the random number generator
     
     int k = 0; float d = 0;
-    if (fitness_function_type == 2 || fitness_function_type == 3) {
-        printf("\nSet k and d values (Usually k=4, d=1 for deceptive trap functions) : ");
-        scanf("%d %f", &k, &d);
-    } else {
-        printf("\nSet k and d values (Usually k=4, d=2.5 for non-deceptive trap functions) : ");
-        scanf("%d %f", &k, &d);
+    if (fitness_function_type != 1) {
+        if (fitness_function_type == 2 || fitness_function_type == 3) {
+            printf("\nSet k and d values (Usually k=4, d=1 for deceptive trap functions) : ");
+            scanf("%d %f", &k, &d);
+        } else {
+            printf("\nSet k and d values (Usually k=4, d=2.5 for non-deceptive trap functions) : ");
+            scanf("%d %f", &k, &d);
+        }
     }
-    
     int gen = 0;
     Population *population = generate_population(population_size, gen, k, d, fitness_function_type);
     gen++;
