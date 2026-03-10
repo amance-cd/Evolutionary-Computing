@@ -1,6 +1,7 @@
 #include "fitness.h"
 
-float count_ones(DNA *member){
+float count_ones(DNA *member, int k, float d){
+    (void)k; (void)d;
     float count = 0;
     for(int i = 0; i < STRINGLENGHT; i++){
         count+=member->dna[i];
@@ -38,21 +39,18 @@ float non_TL_trap_fitness(DNA *member, int k, float d){
     return total_fitness;
 }
 
-float population_mean_fitness_CO(Population *population){
-    float mean = 0;
-    for(int i = 0; i < population->size; i++){
-        mean += count_ones(population->members[i]);
-    }
-    return mean / population->size;
+float evaluate_fitness(DNA *member, int k, float d, int type){
+    float (*func)(DNA *, int, float);
+    if (type == 1) func = count_ones;
+    else if (type == 2 || type == 4) func = TL_trap_fitness;
+    else if (type == 3 || type == 5) func = non_TL_trap_fitness;
+    return func(member, k, d);
 }
 
-float population_mean_fitness_trap(Population *population, int k, float d, int type){
+float population_mean_fitness(Population *population){
     float mean = 0;
-    float (*func)(DNA *, int, float);
-    if (type) func = TL_trap_fitness;
-    else func = non_TL_trap_fitness;
     for(int i = 0; i < population->size; i++){
-        mean += func(population->members[i], k, d);
+        mean += population->members[i]->fitness;
     }
     return mean / population->size;
 }

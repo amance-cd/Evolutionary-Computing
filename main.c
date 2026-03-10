@@ -100,88 +100,47 @@ int main() {
 
     int population_size = inputs.population_size;
     int generations = inputs.generations;
-    int counting_ones = inputs.counting_ones;
-    int deceptiveness = inputs.deceptiveness;
-    int linkage = inputs.linkage;
+    int fitness_function_type = inputs.fitness_function_type;
     float crossover_probability = inputs.crossover_probability;
     
     //generation and execution
     srand(time(NULL)); // Seed the random number generator
+    
+    int k = 0; float d = 0;
+    if (fitness_function_type == 2 || fitness_function_type == 3) {
+        printf("\nSet k and d values (Usually k=4, d=1 for deceptive trap functions) : ");
+        scanf("%d %f", &k, &d);
+    } else {
+        printf("\nSet k and d values (Usually k=4, d=2.5 for non-deceptive trap functions) : ");
+        scanf("%d %f", &k, &d);
+    }
+    
     int gen = 0;
-    float current_fitness = 0;
-    Population *population = generate_population(population_size, gen);
-    print_population(population);
+    Population *population = generate_population(population_size, gen, k, d, fitness_function_type);
     gen++;
-    //counting ones fitness function
-    if (counting_ones) {
-        current_fitness = population_mean_fitness_CO(population);
-        printf("\nInitial population mean fitness : %.2f", current_fitness);
-        
-        clock_t start_time = clock();
-        while (!check_ending(population, gen) && (gen<generations) && (current_fitness<40)){
+    float current_fitness = population_mean_fitness(population);
+    printf("\n\nInitial population mean fitness : %.2f", current_fitness);
+
+    clock_t start_time = clock();
+    while (!check_ending(population, gen) && (gen<generations) && (current_fitness<40)){
         printf("\n\nGeneration %d\n", gen);
         shuffle_population(population);
-        //print_population(population);
-        //printf("Parent population mean fitness : %f\n", population_mean_fitness(population));
 
         Population *offspring_population = (Population *)malloc(sizeof(Population));
-        
-        generate_offsprings(population, offspring_population, gen, crossover_probability);
-        //print_population(offspring_population);
-        //printf("Offspring population mean fitness : %f\n", population_mean_fitness(offspring_population));
+        generate_offsprings(population, offspring_population, gen, crossover_probability, k, d, fitness_function_type);
         
         Population *new_population = (Population *)malloc(sizeof(Population));
         family_competition(population, offspring_population, new_population);
-        //print_population(new_population);
-        current_fitness = population_mean_fitness_CO(new_population);
+
+        current_fitness = population_mean_fitness(new_population);
         printf("New population mean fitness : %.2f\n", current_fitness);
         
         population = new_population;
         gen++;
-        }
-        clock_t end_time = clock();
-        double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-        printf("\n\nExecution Time: %f seconds\n", time_spent);
     }
-
-    else { //trap fitness functions
-        int k; float d;
-        if (deceptiveness) {
-            printf("\nSet k and d values (Usually k=4, d=1 for deceptive trap functions) : ");
-            scanf("%d %f", &k, &d);
-        } else {
-            printf("\nSet k and d values (Usually k=4, d=2.5 for non-deceptive trap functions) : ");
-            scanf("%d %f", &k, &d);
-        }
-        current_fitness = population_mean_fitness_trap(population, k, d, linkage);
-        printf("\n\nInitial population mean fitness : %.2f", current_fitness);
-
-        clock_t start_time = clock();
-        while (!check_ending(population, gen) && (gen<generations) && (current_fitness<40)){
-            printf("\n\nGeneration %d\n", gen);
-            shuffle_population(population);
-            //print_population(population);
-            //printf("Parent population mean fitness : %f\n", population_mean_fitness(population));
-
-            Population *offspring_population = (Population *)malloc(sizeof(Population));
-            generate_offsprings(population, offspring_population, gen, 0.5);
-            //print_population(offspring_population);
-            //printf("Offspring population mean fitness : %f\n", population_mean_fitness(offspring_population));
-            
-            Population *new_population = (Population *)malloc(sizeof(Population));
-            family_competition(population, offspring_population, new_population);
-            //print_population(new_population);
-            current_fitness = population_mean_fitness_trap(new_population, k, d, linkage);
-            printf("New population mean fitness : %.2f\n", current_fitness);
-            
-            population = new_population;
-            gen++;
-        }
-        clock_t end_time = clock();
-        double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-        printf("\n\nExecution Time: %f seconds\n", time_spent);
-    }
-    //print_population(population);
+    clock_t end_time = clock();
+    double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    printf("\n\nExecution Time: %f seconds\n", time_spent);
     free_population(population);
     return 0;   
 }

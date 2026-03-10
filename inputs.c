@@ -3,7 +3,7 @@
 //inputs
 Inputs input_function(){
     int population_size, generations, crossover_type, counting_ones, deceptiveness, linkage;
-    float crossover_probability;
+    float crossover_probability = 0;
     int confirm_choice = 0;
 
     do {
@@ -38,7 +38,7 @@ Inputs input_function(){
                 printf("\nCrossover probability must be in the range (0, 1). Please enter again : ");
                 scanf("%f", &crossover_probability);
             }
-        }else crossover_probability = 0; //crossover_probability is not used for two-point crossover
+        }
         
         //Fitness function type input
         printf("\nFitness function type : Use Counting Ones? \n    - 0 for No\n    - 1 for Yes\n    Selection : ");
@@ -63,9 +63,21 @@ Inputs input_function(){
                 scanf("%d", &linkage);
             }
         }
+        int fitness_function_type;
+        if (counting_ones) {
+            fitness_function_type = 1;
+        } else if (deceptiveness && linkage) {
+            fitness_function_type = 2;
+        } else if (deceptiveness && !linkage) {
+            fitness_function_type = 3;
+        } else if (!deceptiveness && linkage) {
+            fitness_function_type = 4;
+        } else {
+            fitness_function_type = 5;
+        }
 
         //parameters confirmation
-        Inputs temp_inputs = {population_size, generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice};
+        Inputs temp_inputs = {population_size, generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice, fitness_function_type};
         print_inputs(temp_inputs);
         
         printf("\nDo you want to proceed with these parameters? (1 to confirm, 0 to change): ");
@@ -86,7 +98,7 @@ void print_inputs(Inputs inputs) {
     printf("Generations           : %d\n", inputs.generations);
     printf("Crossover type        : %s\n", inputs.crossover_probability == 0 ? "Two-point" : "Uniform");
     if (inputs.crossover_probability != 0) {
-        printf("Crossover probability : %.2f\n", inputs.crossover_probability);
+    printf("Crossover probability : %.2f\n", inputs.crossover_probability);
     }
     printf("Fitness function      : %s\n", inputs.counting_ones ? "Counting Ones" : "Trap Function");
     if (!inputs.counting_ones) {
@@ -98,10 +110,10 @@ void print_inputs(Inputs inputs) {
 void save_inputs_to_file(Inputs inputs, const char* filename) {
     FILE *file = fopen(filename, "w");
     if (file) {
-        fprintf(file, "%d %d %d %d %d %f %d\n", 
+        fprintf(file, "%d %d %d %d %d %f %d %d\n", 
             inputs.population_size, inputs.generations, 
             inputs.counting_ones, inputs.deceptiveness, inputs.linkage, 
-            inputs.crossover_probability, inputs.confirm_choice);
+            inputs.crossover_probability, inputs.confirm_choice, inputs.fitness_function_type);
         fclose(file);
     }
 }
@@ -109,12 +121,12 @@ void save_inputs_to_file(Inputs inputs, const char* filename) {
 int load_inputs_from_file(Inputs *inputs, const char* filename) {
     FILE *file = fopen(filename, "r");
     if (file) {
-        int res = fscanf(file, "%d %d %d %d %d %f %d", 
+        int res = fscanf(file, "%d %d %d %d %d %f %d %d", 
             &inputs->population_size, &inputs->generations, 
             &inputs->counting_ones, &inputs->deceptiveness, &inputs->linkage, 
-            &inputs->crossover_probability, &inputs->confirm_choice);
+            &inputs->crossover_probability, &inputs->confirm_choice, &inputs->fitness_function_type);
         fclose(file);
-        return res == 7; // return 1 if all 7 fields were read successfully
+        return res == 8; // return 1 if all 8 fields were read successfully
     }
     return 0; // File does not exist or error reading
 }

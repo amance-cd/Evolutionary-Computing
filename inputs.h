@@ -13,6 +13,7 @@ typedef struct inputs_{
     int linkage;
     float crossover_probability;
     int confirm_choice;
+    int fitness_function_type;
 }Inputs;
 
 Inputs input_function();

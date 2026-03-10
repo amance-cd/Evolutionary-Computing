@@ -6,12 +6,10 @@
 
 #include "dna.h"
 
-float count_ones(DNA *member);
+float count_ones(DNA *member, int k, float d);
 float deceptive_trap_fitness(DNA *member, int k, float d);
-float population_mean_fitness_CO(Population *population);
-float population_mean_fitness_trap(Population *population, int k, float d, int type);
+float population_mean_fitness(Population *population);
 int check_ending(Population *population, int current_gen);
-
-
+float evaluate_fitness(DNA *member, int k, float d, int type);
 
 #endif

@@ -1,10 +1,10 @@
 #include "dna.h"
 #include "crossovers.h"
-
+#include "fitness.h"
 
 //generation functions 
 
-DNA *generate_member(int gen, int num){
+DNA *generate_member(int gen, int num, int k , float d, int type){
     //generates a member of the population 
     DNA *member = (DNA *)malloc(sizeof(DNA));
     for(int i = 0; i < STRINGLENGHT; i++){
@@ -12,6 +12,7 @@ DNA *generate_member(int gen, int num){
     }
     member->gen = gen;
     member->number = num;
+    member->fitness = evaluate_fitness(member, k, d, type);
     return member;
 }
 
@@ -21,13 +22,13 @@ void generate_random_DNA(DNA *member){
     }
 }
 
-Population *generate_population(int size, int gen){
+Population *generate_population(int size, int gen, int k, float d, int type){
     //generates a population of size size 
     Population *population = (Population *)malloc(sizeof(Population));
     population->size = size;
     population->members = (DNA **)malloc(size * sizeof(DNA *));
     for(int i = 0; i < size; i++){
-        population->members[i] = generate_member(gen, i);
+        population->members[i] = generate_member(gen, i, k, d, type);
         generate_random_DNA(population->members[i]);
     }
     return population;
@@ -42,21 +43,16 @@ void shuffle_population(Population *population){
     }
 }
 
-void generate_offsprings(Population *population, Population *new_population, int gen, float proba){ 
+void generate_offsprings(Population *population, Population *new_population, int gen, float proba, int k, float d, int type){ 
     void (*crossover_function)(DNA *, DNA *, DNA *, DNA *, float);
-    if (proba <= 0) crossover_function = two_pt_crossover; //proba <= 0 to use 2pt-crossover
-    else if (proba < 1) crossover_function = uniform_crossover; //proba < 1 to use uniform-crossover
-    else { //error if proba >= 1
-        fprintf(stderr, "Fatal error : proba is not in the range [0, 1].\n");
-        exit(EXIT_FAILURE);
-    }
-    
+    if (proba == 0) crossover_function = two_pt_crossover; //proba <= 0 to use 2pt-crossover
+    else crossover_function = uniform_crossover; //proba < 1 to use uniform-crossover
     new_population->size = population->size;
     new_population->members = (DNA **)malloc(new_population->size * sizeof(DNA *));
 
     for(int i=0; i < population->size - 1; i+=2){
-        DNA *child1 = generate_member(gen, i);
-        DNA *child2 = generate_member(gen, i+1);
+        DNA *child1 = generate_member(gen, i, k, d, type);
+        DNA *child2 = generate_member(gen, i+1, k, d, type);
         DNA *parent1 = population->members[i];
         DNA *parent2 = population->members[i+1];
         crossover_function(parent1, parent2, child1, child2, proba);

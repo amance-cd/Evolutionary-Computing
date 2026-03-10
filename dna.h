@@ -11,6 +11,7 @@ typedef struct DNA_{
     int gen;
     int number;
     int dna[STRINGLENGHT];
+    float fitness;
 }DNA;
 
 typedef struct Population_{
@@ -24,11 +25,11 @@ typedef struct Family_{
 }Family;
 
 //generation functions
-DNA *generate_member(int gen, int num);
+DNA *generate_member(int gen, int num, int k , float d, int type);
 void generate_random_DNA(DNA *member);
-Population *generate_population(int size, int gen);
+Population *generate_population(int size, int gen, int k, float d, int type);
 void shuffle_population(Population *population);
-void generate_offsprings(Population *population, Population *new_population, int gen, float proba);
+void generate_offsprings(Population *population, Population *new_population, int gen, float proba, int k, float d, int type);
 
 
 //printing functions
