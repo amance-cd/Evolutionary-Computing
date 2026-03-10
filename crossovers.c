@@ -1,7 +1,7 @@
 #include "crossovers.h"
 
 void two_pt_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2, float ghost_var){
-    ghost_var = 0; //avoids the warning of unused variable, ghost_var is present to make the function signature the same as uniform_crossover
+    (void)ghost_var; //avoids the warning of unused variable, ghost_var is present to make the function signature the same as uniform_crossover
     int pt1 = 5 + rand() % (STRINGLENGHT-10); //assigns a random point on the string 
     int pt2 = -1;
     while ((pt2==pt1)||(pt2==-1)){ //makes sure the two points are different 

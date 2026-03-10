@@ -57,6 +57,10 @@ float population_mean_fitness_trap(Population *population, int k, float d, int t
     return mean / population->size;
 }
 
-
-
+int check_ending(Population *population, int current_gen){
+    for(int i = 0; i < population->size; i++){
+        if (population->members[i]->gen < current_gen - 20) return 1;
+    }
+    return 0;
+}
 

@@ -1,7 +1,1 @@
-Steps 
-
-1. Generate the binary DNA format 
-2. Population generation function
-3. Crossover functions
-4. Fitness evaluation
-5. Selection function
+Counting Ones - 2X : min 1280 - 0.035829s

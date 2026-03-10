@@ -1,6 +1,7 @@
 #include "dna.h"
 #include "crossovers.h"
 #include "competition.h"
+#include "inputs.h"
 
 #include <time.h>
 
@@ -82,105 +83,42 @@
 
 
 int main() {
+    Inputs inputs;
+    int use_previous = 0;
     
-    //inputs
-    int population_size, generations, crossover_type, counting_ones, deceptiveness, linkage;
-    float crossover_probability;
-    int confirm_choice = 0;
-
-    do {
-        //Population size input
-        printf("\n\nEnter population size: ");
-        scanf("%d", &population_size);
-        while (population_size <= 0 || population_size % 2 != 0) {
-            printf("\n Population size must be a positive even number. Please enter again : ");
-            scanf("%d", &population_size);
-        }
-
-        //Number of generations input
-        printf("\nEnter number of generations: ");
-        scanf("%d", &generations);
-        while (generations <= 0) {
-            printf("\nNumber of generations must be a positive integer. Please enter again : ");
-            scanf("%d", &generations);
-        }
-
-        //Crossover type input
-        printf("\nEnter crossover type : \n   - 0 for two-point\n   - 1 for uniform\n   Selection : ");
-        scanf("%d", &crossover_type);
-        while (crossover_type < 0 || crossover_type > 1) {
-            printf("\nCrossover type must be 0 or 1. Please enter again : ");
-            scanf("%d", &crossover_type);
-        }
+    if (load_inputs_from_file(&inputs, "previous_inputs.txt")) {
+        printf("\nPrevious parameters found : ");
+        print_inputs(inputs);
+        printf("\nDo you want to use these parameters for this run? (1 for Yes, 0 for No): ");
+        scanf("%d", &use_previous);
+    }
     
-        if (crossover_type == 1) {
-            printf("\nSelect crossover probability (usually 0.5) : ");
-            scanf("%f", &crossover_probability);
-            while (crossover_probability <= 0 || crossover_probability >= 1) {
-                printf("\nCrossover probability must be in the range (0, 1). Please enter again : ");
-                scanf("%f", &crossover_probability);
-            }
-        }else crossover_probability = 0; //crossover_probability is not used for two-point crossover
-        
-        //Fitness function type input
-        printf("\nFitness function type : Use Counting Ones? \n    - 0 for No\n    - 1 for Yes\n    Selection : ");
-        scanf("%d", &counting_ones);
-        while (counting_ones < 0 || counting_ones > 1) {
-            printf("\nCounting Ones choice must be 0 or 1. Please enter again : ");
-            scanf("%d", &counting_ones);
-        }
-        if (!counting_ones) {
-            printf("\nSelect deceptiveness: \n");
-            printf("    - 0 for Non-Deceptive trap function\n    - 1 for Deceptive trap function\n    Selection : ");
-            scanf("%d", &deceptiveness);
-            while (deceptiveness < 0 || deceptiveness > 1) {
-                printf("\nDeceptiveness choice must be 0 or 1. Please enter again : ");
-                scanf("%d", &deceptiveness);
-            }
-            printf("\nSelect linkage: \n");
-            printf("    - 0 for Non-Tightly Linked trap function\n    - 1 for Tightly Linked trap function\n    Selection : ");
-            scanf("%d", &linkage);
-            while (linkage < 0 || linkage > 1) {
-                printf("\nLinkage choice must be 0 or 1. Please enter again : ");
-                scanf("%d", &linkage);
-            }
-        }
+    if (!use_previous) {
+        inputs = input_function();
+        save_inputs_to_file(inputs, "previous_inputs.txt");
+    }
 
-        // --- Parameter Confirmation ---
-        printf("\n--- Parameter Confirmation ---\n");
-        printf("Population size       : %d\n", population_size);
-        printf("Generations           : %d\n", generations);
-        printf("Crossover type        : %s\n", crossover_type == 1 ? "Uniform" : "Two-point");
-        if (crossover_type == 1) {
-            printf("Crossover probability : %.2f\n", crossover_probability);
-        }
-        printf("Fitness function      : %s\n", counting_ones ? "Counting Ones" : "Trap Function");
-        if (!counting_ones) {
-            printf("Deceptiveness         : %s\n", deceptiveness ? "Deceptive" : "Non-Deceptive");
-            printf("Linkage               : %s\n", linkage ? "Tightly Linked" : "Non-Tightly Linked");
-        }
-        
-        printf("\nDo you want to proceed with these parameters? (1 to confirm, 0 to change): ");
-        scanf("%d", &confirm_choice);
-        
-        if (confirm_choice != 1) {
-            printf("\nRestarting parameter selection\n\n");
-        }
-
-    } while (confirm_choice != 1);
-
-    //confirmation of parameters 
-
+    int population_size = inputs.population_size;
+    int generations = inputs.generations;
+    int counting_ones = inputs.counting_ones;
+    int deceptiveness = inputs.deceptiveness;
+    int linkage = inputs.linkage;
+    float crossover_probability = inputs.crossover_probability;
+    
     //generation and execution
     srand(time(NULL)); // Seed the random number generator
     int gen = 0;
+    float current_fitness = 0;
     Population *population = generate_population(population_size, gen);
     print_population(population);
-    
+    gen++;
     //counting ones fitness function
     if (counting_ones) {
-        printf("\nInitial population mean fitness : %.2f", population_mean_fitness_CO(population));
-        for(gen = 1; gen < generations; gen++){
+        current_fitness = population_mean_fitness_CO(population);
+        printf("\nInitial population mean fitness : %.2f", current_fitness);
+        
+        clock_t start_time = clock();
+        while (!check_ending(population, gen) && (gen<generations) && (current_fitness<40)){
         printf("\n\nGeneration %d\n", gen);
         shuffle_population(population);
         //print_population(population);
@@ -195,10 +133,15 @@ int main() {
         Population *new_population = (Population *)malloc(sizeof(Population));
         family_competition(population, offspring_population, new_population);
         //print_population(new_population);
-        printf("New population mean fitness : %.2f\n", population_mean_fitness_CO(new_population));
+        current_fitness = population_mean_fitness_CO(new_population);
+        printf("New population mean fitness : %.2f\n", current_fitness);
         
         population = new_population;
+        gen++;
         }
+        clock_t end_time = clock();
+        double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+        printf("\n\nExecution Time: %f seconds\n", time_spent);
     }
 
     else { //trap fitness functions
@@ -210,8 +153,11 @@ int main() {
             printf("\nSet k and d values (Usually k=4, d=2.5 for non-deceptive trap functions) : ");
             scanf("%d %f", &k, &d);
         }
-        printf("\n\nInitial population mean fitness : %.2f", population_mean_fitness_trap(population, k, d, linkage));
-        for(gen = 1; gen < generations; gen++){
+        current_fitness = population_mean_fitness_trap(population, k, d, linkage);
+        printf("\n\nInitial population mean fitness : %.2f", current_fitness);
+
+        clock_t start_time = clock();
+        while (!check_ending(population, gen) && (gen<generations) && (current_fitness<40)){
             printf("\n\nGeneration %d\n", gen);
             shuffle_population(population);
             //print_population(population);
@@ -225,12 +171,17 @@ int main() {
             Population *new_population = (Population *)malloc(sizeof(Population));
             family_competition(population, offspring_population, new_population);
             //print_population(new_population);
-            printf("New population mean fitness : %.2f\n", population_mean_fitness_trap(new_population, k, d, linkage));
+            current_fitness = population_mean_fitness_trap(new_population, k, d, linkage);
+            printf("New population mean fitness : %.2f\n", current_fitness);
             
             population = new_population;
+            gen++;
         }
+        clock_t end_time = clock();
+        double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+        printf("\n\nExecution Time: %f seconds\n", time_spent);
     }
-    print_population(population);
+    //print_population(population);
     free_population(population);
     return 0;   
 }
