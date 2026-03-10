@@ -27,7 +27,7 @@ DNA *generate_member(int gen, int num);
 void generate_random_DNA(DNA *member);
 Population *generate_population(int gen);
 void shuffle_population(Population *population);
-void generate_offsprings(Population *population, Population *new_population, int gen);
+void generate_offsprings(Population *population, Population *new_population, int gen, float proba);
 
 
 //printing functions

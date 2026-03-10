@@ -1,12 +1,13 @@
 #include "crossovers.h"
 
-void two_pt_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2){
-    int pt1 = 5 + rand() % (STRINGLENGHT-10); //assign a random point on the string 
+void two_pt_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2, float ghost_var){
+    ghost_var = ghost_var; //avoids the warning of unused variable, ghost_var is present to make the function signature the same as uniform_crossover
+    int pt1 = 5 + rand() % (STRINGLENGHT-10); //assigns a random point on the string 
     int pt2 = -1;
-    while ((pt2==pt1)||(pt2==-1)){ //make sure the two points are different 
+    while ((pt2==pt1)||(pt2==-1)){ //makes sure the two points are different 
         pt2 = 5 + rand() % (STRINGLENGHT-10);
     }
-    if (pt2 < pt1){ //make sure pt1 < pt2
+    if (pt2 < pt1){ //makes sure pt1 < pt2
         int temp = pt2;
         pt2 = pt1;
         pt1 = temp;

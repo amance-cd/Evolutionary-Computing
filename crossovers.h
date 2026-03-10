@@ -6,7 +6,7 @@
 
 #include "dna.h"
 
-void two_pt_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2);
+void two_pt_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2, float ghost_var);
 void uniform_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2, float probability);
 
 

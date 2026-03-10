@@ -40,14 +40,20 @@ void shuffle_population(Population *population){
     }
 }
 
-void generate_offsprings(Population *population, Population *new_population, int gen){
+void generate_offsprings(Population *population, Population *new_population, int gen, float proba){ 
+    void (*crossover_function)(DNA *, DNA *, DNA *, DNA *, float);
+    if (proba <= 0) crossover_function = two_pt_crossover; //proba <= 0 to use 2pt-crossover
+    else if (proba < 1) crossover_function = uniform_crossover; //proba < 1 to use uniform-crossover
+    else { //error if proba >= 1
+        fprintf(stderr, "Fatal error : proba is not in the range [0, 1].\n");
+        exit(EXIT_FAILURE);
+    }
     for(int i=0; i<N-1; i+=2){
         DNA *child1 = generate_member(gen, i);
         DNA *child2 = generate_member(gen, i+1);
         DNA *parent1 = population->members[i];
         DNA *parent2 = population->members[i+1];
-        two_pt_crossover(parent1, parent2, child1, child2);
-        //uniform_crossover(parent1, parent2, child1, child2, 0.5);
+        crossover_function(parent1, parent2, child1, child2, proba);
         new_population->members[i] = child1;
         new_population->members[i+1] = child2;
     }
