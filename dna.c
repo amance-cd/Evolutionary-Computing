@@ -4,7 +4,7 @@
 
 //generation functions 
 
-DNA *generate_member(int gen, int num, int k , float d, int type){
+DNA *generate_member(int gen, int num){
     //generates a member of the population 
     DNA *member = (DNA *)malloc(sizeof(DNA));
     for(int i = 0; i < STRINGLENGHT; i++){
@@ -28,7 +28,7 @@ Population *generate_population(int size, int gen, int k, float d, int type){
     population->size = size;
     population->members = (DNA **)malloc(size * sizeof(DNA *));
     for(int i = 0; i < size; i++){
-        population->members[i] = generate_member(gen, i, k, d, type);
+        population->members[i] = generate_member(gen, i);
         generate_random_DNA(population->members[i]);
         population->members[i]->fitness = evaluate_fitness(population->members[i], k, d, type);
     }
@@ -52,8 +52,8 @@ void generate_offsprings(Population *population, Population *new_population, int
     new_population->members = (DNA **)malloc(new_population->size * sizeof(DNA *));
 
     for(int i=0; i < population->size - 1; i+=2){
-        DNA *child1 = generate_member(gen, i, k, d, type);
-        DNA *child2 = generate_member(gen, i+1, k, d, type);
+        DNA *child1 = generate_member(gen, i);
+        DNA *child2 = generate_member(gen, i+1);
         DNA *parent1 = population->members[i];
         DNA *parent2 = population->members[i+1];
         crossover_function(parent1, parent2, child1, child2, proba);

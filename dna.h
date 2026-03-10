@@ -25,7 +25,7 @@ typedef struct Family_{
 }Family;
 
 //generation functions
-DNA *generate_member(int gen, int num, int k , float d, int type);
+DNA *generate_member(int gen, int num);
 void generate_random_DNA(DNA *member);
 Population *generate_population(int size, int gen, int k, float d, int type);
 void shuffle_population(Population *population);
