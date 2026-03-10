@@ -85,66 +85,91 @@ int main() {
     
     //inputs
     int population_size, generations, crossover_type, counting_ones, deceptiveness, linkage;
-    
-    //Population size input
-    printf("Enter population size: ");
-    scanf("%d", &population_size);
-    while (population_size <= 0 || population_size % 2 != 0) {
-        printf("\n Population size must be a positive even number. Please enter again : ");
-        scanf("%d", &population_size);
-    }
-
-    //Number of generations input
-    printf("\nEnter number of generations: \n");
-    scanf("%d", &generations);
-    while (generations <= 0) {
-        printf("\nNumber of generations must be a positive integer. Please enter again : ");
-        scanf("%d", &generations);
-    }
-
-    //Crossover type input
-    printf("\nEnter crossover type : \n   - 0 for two-point\n   - 1 for uniform: ");
-    scanf("%d", &crossover_type);
-    while (crossover_type < 0 || crossover_type > 1) {
-        printf("\nCrossover type must be 0 or 1. Please enter again : ");
-        scanf("%d", &crossover_type);
-    }
     float crossover_probability;
-    if (crossover_type == 1) {
-        printf("\nSelect crossover probability (usually 0.5) : ");
-        scanf("%f", &crossover_probability);
-        while (crossover_probability <= 0 || crossover_probability >= 1) {
-            printf("\nCrossover probability must be in the range (0, 1). Please enter again : ");
-            scanf("%f", &crossover_probability);
+    int confirm_choice = 0;
+
+    do {
+        //Population size input
+        printf("\n\nEnter population size: ");
+        scanf("%d", &population_size);
+        while (population_size <= 0 || population_size % 2 != 0) {
+            printf("\n Population size must be a positive even number. Please enter again : ");
+            scanf("%d", &population_size);
         }
-    }else crossover_probability = 0; //crossover_probability is not used for two-point crossover
+
+        //Number of generations input
+        printf("\nEnter number of generations: ");
+        scanf("%d", &generations);
+        while (generations <= 0) {
+            printf("\nNumber of generations must be a positive integer. Please enter again : ");
+            scanf("%d", &generations);
+        }
+
+        //Crossover type input
+        printf("\nEnter crossover type : \n   - 0 for two-point\n   - 1 for uniform\n   Selection : ");
+        scanf("%d", &crossover_type);
+        while (crossover_type < 0 || crossover_type > 1) {
+            printf("\nCrossover type must be 0 or 1. Please enter again : ");
+            scanf("%d", &crossover_type);
+        }
+    
+        if (crossover_type == 1) {
+            printf("\nSelect crossover probability (usually 0.5) : ");
+            scanf("%f", &crossover_probability);
+            while (crossover_probability <= 0 || crossover_probability >= 1) {
+                printf("\nCrossover probability must be in the range (0, 1). Please enter again : ");
+                scanf("%f", &crossover_probability);
+            }
+        }else crossover_probability = 0; //crossover_probability is not used for two-point crossover
+        
+        //Fitness function type input
+        printf("\nFitness function type : Use Counting Ones? \n    - 0 for No\n    - 1 for Yes\n    Selection : ");
+        scanf("%d", &counting_ones);
+        while (counting_ones < 0 || counting_ones > 1) {
+            printf("\nCounting Ones choice must be 0 or 1. Please enter again : ");
+            scanf("%d", &counting_ones);
+        }
+        if (!counting_ones) {
+            printf("\nSelect deceptiveness: \n");
+            printf("    - 0 for Non-Deceptive trap function\n    - 1 for Deceptive trap function\n    Selection : ");
+            scanf("%d", &deceptiveness);
+            while (deceptiveness < 0 || deceptiveness > 1) {
+                printf("\nDeceptiveness choice must be 0 or 1. Please enter again : ");
+                scanf("%d", &deceptiveness);
+            }
+            printf("\nSelect linkage: \n");
+            printf("    - 0 for Non-Tightly Linked trap function\n    - 1 for Tightly Linked trap function\n    Selection : ");
+            scanf("%d", &linkage);
+            while (linkage < 0 || linkage > 1) {
+                printf("\nLinkage choice must be 0 or 1. Please enter again : ");
+                scanf("%d", &linkage);
+            }
+        }
+
+        // --- Parameter Confirmation ---
+        printf("\n--- Parameter Confirmation ---\n");
+        printf("Population size       : %d\n", population_size);
+        printf("Generations           : %d\n", generations);
+        printf("Crossover type        : %s\n", crossover_type == 1 ? "Uniform" : "Two-point");
+        if (crossover_type == 1) {
+            printf("Crossover probability : %.2f\n", crossover_probability);
+        }
+        printf("Fitness function      : %s\n", counting_ones ? "Counting Ones" : "Trap Function");
+        if (!counting_ones) {
+            printf("Deceptiveness         : %s\n", deceptiveness ? "Deceptive" : "Non-Deceptive");
+            printf("Linkage               : %s\n", linkage ? "Tightly Linked" : "Non-Tightly Linked");
+        }
+        
+        printf("\nDo you want to proceed with these parameters? (1 to confirm, 0 to change): ");
+        scanf("%d", &confirm_choice);
+        
+        if (confirm_choice != 1) {
+            printf("\nRestarting parameter selection\n\n");
+        }
+
+    } while (confirm_choice != 1);
 
     //confirmation of parameters 
-    
-
-    //Fitness function type input
-    printf("\nFitness function type : Use Counting Ones? \n    - 1 for Yes\n    - 0 for No\n   Selection : ");
-    scanf("%d", &counting_ones);
-    while (counting_ones < 0 || counting_ones > 1) {
-        printf("\nCounting Ones choice must be 0 or 1. Please enter again : ");
-        scanf("%d", &counting_ones);
-    }
-    if (!counting_ones) {
-        printf("\nSelect deceptiveness: \n");
-        printf("- 0 for Non-Deceptive trap function\n    - 1 for Deceptive trap function\n   Selection : ");
-        scanf("%d", &deceptiveness);
-        while (deceptiveness < 0 || deceptiveness > 1) {
-            printf("\nDeceptiveness choice must be 0 or 1. Please enter again : ");
-            scanf("%d", &deceptiveness);
-        }
-        printf("\nSelect linkage: \n");
-        printf("- 0 for Non-Tightly Linked trap function\n    - 1 for Tightly Linked trap function\n   Selection : ");
-        scanf("%d", &linkage);
-        while (linkage < 0 || linkage > 1) {
-            printf("\nLinkage choice must be 0 or 1. Please enter again : ");
-            scanf("%d", &linkage);
-        }
-    }
 
     //generation and execution
     srand(time(NULL)); // Seed the random number generator
@@ -179,10 +204,10 @@ int main() {
     else { //trap fitness functions
         int k; float d;
         if (deceptiveness) {
-            printf("\nSet k and d values : (Usually k=4, d=1 for deceptive trap functions)\n");
+            printf("\nSet k and d values (Usually k=4, d=1 for deceptive trap functions) : ");
             scanf("%d %f", &k, &d);
         } else {
-            printf("\nSet k and d values : (Usually k=4, d=2.5 for non-deceptive trap functions)\n");
+            printf("\nSet k and d values (Usually k=4, d=2.5 for non-deceptive trap functions) : ");
             scanf("%d %f", &k, &d);
         }
         printf("\n\nInitial population mean fitness : %.2f", population_mean_fitness_trap(population, k, d, linkage));
