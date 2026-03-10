@@ -21,7 +21,7 @@ void sort_by_fitness_family(DNA *family[4], float (*fitness_function)(DNA *), DN
 } 
 
 void family_competition(Population *parent_population, Population *offspring_population, Population *new_population){
-    for (int i = 0; i < N; i+=2){
+    for (int i = 0; i < parent_population->size; i+=2){
         DNA *family[4];
         family[0] = parent_population->members[i];
         family[1] = parent_population->members[i+1];

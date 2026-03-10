@@ -40,22 +40,23 @@ float non_TL_trap_fitness(DNA *member, int k, float d){
 
 float population_mean_fitness_CO(Population *population){
     float mean = 0;
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < population->size; i++){
         mean += count_ones(population->members[i]);
     }
-    return mean / N;
+    return mean / population->size;
 }
 
-float population_mean_fitness_TL(Population *population, int k, float d, int type){
+float population_mean_fitness_trap(Population *population, int k, float d, int type){
     float mean = 0;
     float (*func)(DNA *, int, float);
     if (type) func = TL_trap_fitness;
     else func = non_TL_trap_fitness;
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < population->size; i++){
         mean += func(population->members[i], k, d);
     }
-    return mean / N;
+    return mean / population->size;
 }
+
 
 
 

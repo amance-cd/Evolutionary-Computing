@@ -21,10 +21,12 @@ void generate_random_DNA(DNA *member){
     }
 }
 
-Population *generate_population(int gen){
-    //generates a population of size N 
+Population *generate_population(int size, int gen){
+    //generates a population of size size 
     Population *population = (Population *)malloc(sizeof(Population));
-    for(int i = 0; i < N; i++){
+    population->size = size;
+    population->members = (DNA **)malloc(size * sizeof(DNA *));
+    for(int i = 0; i < size; i++){
         population->members[i] = generate_member(gen, i);
         generate_random_DNA(population->members[i]);
     }
@@ -32,8 +34,8 @@ Population *generate_population(int gen){
 }
 
 void shuffle_population(Population *population){
-    for(int i = 0; i < N; i++){
-        int j = rand() % N;
+    for(int i = 0; i < population->size; i++){
+        int j = rand() % population->size;
         DNA *temp = population->members[i];
         population->members[i] = population->members[j];
         population->members[j] = temp;
@@ -48,7 +50,11 @@ void generate_offsprings(Population *population, Population *new_population, int
         fprintf(stderr, "Fatal error : proba is not in the range [0, 1].\n");
         exit(EXIT_FAILURE);
     }
-    for(int i=0; i<N-1; i+=2){
+    
+    new_population->size = population->size;
+    new_population->members = (DNA **)malloc(new_population->size * sizeof(DNA *));
+
+    for(int i=0; i < population->size - 1; i+=2){
         DNA *child1 = generate_member(gen, i);
         DNA *child2 = generate_member(gen, i+1);
         DNA *parent1 = population->members[i];
@@ -72,7 +78,7 @@ void print_member(DNA *member){
 
 void print_population(Population *population){
     //prints the info of every member of a population
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < population->size; i++){
         print_member(population->members[i]);
     }
 }
@@ -86,9 +92,10 @@ void free_member(DNA *member){
 
 void free_population(Population *population){
     //frees every member of a population and frees the population
-    for(int i = 0; i < N; i++){
+    for(int i = 0; i < population->size; i++){
         free_member(population->members[i]);
     }
+    free(population->members);
     free(population);
 }
 

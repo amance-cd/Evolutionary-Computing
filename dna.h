@@ -6,7 +6,6 @@
 
 
 #define STRINGLENGHT 40
-#define N 10
 
 typedef struct DNA_{
     int gen;
@@ -15,17 +14,19 @@ typedef struct DNA_{
 }DNA;
 
 typedef struct Population_{
-    DNA *members[N];
+    int size;
+    DNA **members;
 }Population;
 
-/*typedef struct Family_{
+typedef struct Family_{
+    int size;
     DNA *members[4];
-}Family;*/
+}Family;
 
 //generation functions
 DNA *generate_member(int gen, int num);
 void generate_random_DNA(DNA *member);
-Population *generate_population(int gen);
+Population *generate_population(int size, int gen);
 void shuffle_population(Population *population);
 void generate_offsprings(Population *population, Population *new_population, int gen, float proba);
 
