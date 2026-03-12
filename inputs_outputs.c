@@ -2,14 +2,14 @@
 
 //inputs
 Inputs input_function(){
-    int generations, crossover_type, counting_ones, deceptiveness, linkage, fitness_function_type;
+    int generations = 0, crossover_type = 0, counting_ones = 0, deceptiveness = 0, linkage = 0, fitness_function_type = 1;
     float crossover_probability = 0;
     int confirm_choice = 0;
 
-    //Population size input
+    //population size input
     do {
 
-        //Number of generations input
+        //number of generations input
         printf("\nEnter number of generations: ");
         scanf("%d", &generations);
         while (generations <= 0) {
@@ -17,7 +17,7 @@ Inputs input_function(){
             scanf("%d", &generations);
         }
 
-        //Crossover type input
+        //crossover type input
         printf("\nEnter crossover type : \n   - 0 for two-point\n   - 1 for uniform\n   Selection : ");
         scanf("%d", &crossover_type);
         while (crossover_type < 0 || crossover_type > 1) {
@@ -34,7 +34,7 @@ Inputs input_function(){
             }
         }
         
-        //Fitness function type input
+        //fitness function type input
         printf("\nFitness function type : Use Counting Ones? \n    - 0 for No\n    - 1 for Yes\n    Selection : ");
         scanf("%d", &counting_ones);
         while (counting_ones < 0 || counting_ones > 1) {
@@ -116,19 +116,19 @@ int load_inputs_from_file(Inputs *inputs, const char* filename) {
             &inputs->generations, &inputs->counting_ones, &inputs->deceptiveness, &inputs->linkage, 
             &inputs->crossover_probability, &inputs->confirm_choice, &inputs->fitness_function_type);
         fclose(file);
-        return res == 7; // return 1 if all 7 fields were read successfully
+        return res == 7; //returns 1 if all 7 fields were read successfully
     }
-    return 0; // File does not exist or error reading
+    return 0; //returns 0 if file does not exist or error reading
 }
 
 // CSV outputs functions
-int get_next_set_id(const char* filename) {
+int get_next_set_id(const char* filename){
     int next_set_id = 1;
     FILE *csv_read = fopen(filename, "r");
     if (csv_read != NULL) {
         char line[256];
         int last_set_id = 0;
-        // Skip header
+        //skip header
         if (fgets(line, sizeof(line), csv_read) != NULL) {
             while (fgets(line, sizeof(line), csv_read) != NULL) {
                 int current_set;
@@ -159,7 +159,7 @@ void append_run_to_csv(const char* filename, int set_id, int run, int gen, doubl
 
     FILE *csv_file = fopen(filename, "a");
     if (csv_file != NULL) {
-        // Only write header if the file is new/empty
+        //only write header if the file is new/empty
         fseek(csv_file, 0, SEEK_END);
         if (ftell(csv_file) == 0) {
             fprintf(csv_file, "Set ID,Run,Generations,Execution Time (s),Population Size,Success (Max=40),Crossover,Fitness Function\n");

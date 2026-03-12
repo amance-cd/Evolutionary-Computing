@@ -45,7 +45,9 @@ int family_competition(Population *parent_population, Population *offspring_popu
         }
     }
     // Free the populations structures
+    free(parent_population->members);
     free(parent_population);
+    free(offspring_population->members);
     free(offspring_population);
     return improvement_found;
 }
