@@ -1,4 +1,0 @@
-settings set target.input-path input.txt
-run
-bt
-quit
