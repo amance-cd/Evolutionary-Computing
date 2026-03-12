@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
 
-OBJS = main.o dna.o crossovers.o competition.o fitness.o inputs.o
+OBJS = main.o dna.o crossovers.o competition.o fitness.o inputs_outputs.o
 TARGET = ga
 
 all: $(TARGET)

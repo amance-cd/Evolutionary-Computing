@@ -1,19 +1,13 @@
-#include "inputs.h"
+#include "inputs_outputs.h"
 
 //inputs
 Inputs input_function(){
-    int population_size, generations, crossover_type, counting_ones, deceptiveness, linkage, fitness_function_type;
+    int generations, crossover_type, counting_ones, deceptiveness, linkage, fitness_function_type;
     float crossover_probability = 0;
     int confirm_choice = 0;
 
+    //Population size input
     do {
-        //Population size input
-        printf("\n\nEnter population size: ");
-        scanf("%d", &population_size);
-        while (population_size <= 0 || population_size % 2 != 0) {
-            printf("\n Population size must be a positive even number. Please enter again : ");
-            scanf("%d", &population_size);
-        }
 
         //Number of generations input
         printf("\nEnter number of generations: ");
@@ -76,7 +70,7 @@ Inputs input_function(){
         }
 
         //parameters confirmation
-        Inputs temp_inputs = {population_size, generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice, fitness_function_type};
+        Inputs temp_inputs = {generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice, fitness_function_type};
         print_inputs(temp_inputs);
         
         printf("\nDo you want to proceed with these parameters? (1 to confirm, 0 to change): ");
@@ -88,12 +82,11 @@ Inputs input_function(){
 
     } while (confirm_choice != 1);
 
-    return (Inputs){population_size, generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice, fitness_function_type};
+    return (Inputs){generations, counting_ones, deceptiveness, linkage, crossover_probability, confirm_choice, fitness_function_type};
 }
 
 void print_inputs(Inputs inputs) {
     printf("\n--- Parameter Confirmation ---\n");
-    printf("Population size       : %d\n", inputs.population_size);
     printf("Generations           : %d\n", inputs.generations);
     printf("Crossover type        : %s\n", inputs.crossover_probability == 0 ? "Two-point" : "Uniform");
     if (inputs.crossover_probability != 0) {
@@ -109,9 +102,8 @@ void print_inputs(Inputs inputs) {
 void save_inputs_to_file(Inputs inputs, const char* filename) {
     FILE *file = fopen(filename, "w");
     if (file) {
-        fprintf(file, "%d %d %d %d %d %f %d %d\n", 
-            inputs.population_size, inputs.generations, 
-            inputs.counting_ones, inputs.deceptiveness, inputs.linkage, 
+        fprintf(file, "%d %d %d %d %f %d %d\n", 
+            inputs.generations, inputs.counting_ones, inputs.deceptiveness, inputs.linkage, 
             inputs.crossover_probability, inputs.confirm_choice, inputs.fitness_function_type);
         fclose(file);
     }
@@ -120,12 +112,61 @@ void save_inputs_to_file(Inputs inputs, const char* filename) {
 int load_inputs_from_file(Inputs *inputs, const char* filename) {
     FILE *file = fopen(filename, "r");
     if (file) {
-        int res = fscanf(file, "%d %d %d %d %d %f %d %d", 
-            &inputs->population_size, &inputs->generations, 
-            &inputs->counting_ones, &inputs->deceptiveness, &inputs->linkage, 
+        int res = fscanf(file, "%d %d %d %d %f %d %d", 
+            &inputs->generations, &inputs->counting_ones, &inputs->deceptiveness, &inputs->linkage, 
             &inputs->crossover_probability, &inputs->confirm_choice, &inputs->fitness_function_type);
         fclose(file);
-        return res == 8; // return 1 if all 8 fields were read successfully
+        return res == 7; // return 1 if all 7 fields were read successfully
     }
     return 0; // File does not exist or error reading
+}
+
+// CSV outputs functions
+int get_next_set_id(const char* filename) {
+    int next_set_id = 1;
+    FILE *csv_read = fopen(filename, "r");
+    if (csv_read != NULL) {
+        char line[256];
+        int last_set_id = 0;
+        // Skip header
+        if (fgets(line, sizeof(line), csv_read) != NULL) {
+            while (fgets(line, sizeof(line), csv_read) != NULL) {
+                int current_set;
+                if (sscanf(line, "%d,", &current_set) == 1) {
+                    if (current_set > last_set_id) {
+                        last_set_id = current_set;
+                    }
+                }
+            }
+        }
+        next_set_id = last_set_id + 1;
+        fclose(csv_read);
+    }
+    return next_set_id;
+}
+
+void append_run_to_csv(const char* filename, int set_id, int run, int gen, double time_spent, float max_fitness, int population_size, float crossover_probability, int fitness_function_type) {
+    const char* crossover_str = (crossover_probability == 0) ? "2X" : "UX";
+    const char* fitness_str;
+    switch(fitness_function_type) {
+        case 1: fitness_str = "Counting Ones"; break;
+        case 2: fitness_str = "Deceptive TL Trap"; break;
+        case 3: fitness_str = "Deceptive Non-TL Trap"; break;
+        case 4: fitness_str = "Non-Deceptive TL Trap"; break;
+        case 5: fitness_str = "Non-Deceptive Non-TL Trap"; break;
+        default: fitness_str = "Unknown"; break;
+    }
+
+    FILE *csv_file = fopen(filename, "a");
+    if (csv_file != NULL) {
+        // Only write header if the file is new/empty
+        fseek(csv_file, 0, SEEK_END);
+        if (ftell(csv_file) == 0) {
+            fprintf(csv_file, "Set ID,Run,Generations,Execution Time (s),Population Size,Success (Max=40),Crossover,Fitness Function\n");
+        }
+        
+        int success = (max_fitness >= 40.0) ? 1 : 0;
+        fprintf(csv_file, "%d,%d,%d,%f,%d,%d,%s,%s\n", set_id, run, gen, time_spent, population_size, success, crossover_str, fitness_str);
+        fclose(csv_file);
+    }
 }

@@ -55,10 +55,13 @@ float population_mean_fitness(Population *population){
     return mean / population->size;
 }
 
-int check_ending(Population *population, int current_gen){
+float population_max_fitness(Population *population){
+    float max = -1000000.0;
     for(int i = 0; i < population->size; i++){
-        if (population->members[i]->gen < current_gen - 20) return 1;
+        if (population->members[i]->fitness > max) {
+            max = population->members[i]->fitness;
+        }
     }
-    return 0;
+    return max;
 }
 

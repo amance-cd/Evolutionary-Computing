@@ -1,0 +1,1581 @@
+Set,Run,Generations,Execution Time (s),Population Size,Success (Max=40),Crossover,Fitness Function
+1,1,41,0.000372,10,0,2X,Counting Ones
+1,2,30,0.000288,10,0,2X,Counting Ones
+1,3,42,0.000376,10,0,2X,Counting Ones
+1,4,33,0.000302,10,0,2X,Counting Ones
+1,5,39,0.000347,10,0,2X,Counting Ones
+1,6,41,0.000416,10,0,2X,Counting Ones
+1,7,36,0.000387,10,0,2X,Counting Ones
+1,8,38,0.000407,10,0,2X,Counting Ones
+1,9,33,0.000293,10,0,2X,Counting Ones
+1,10,42,0.000375,10,0,2X,Counting Ones
+2,1,46,0.001075,20,0,2X,Counting Ones
+2,2,44,0.000920,20,0,2X,Counting Ones
+2,3,43,0.001206,20,0,2X,Counting Ones
+2,4,50,0.001060,20,0,2X,Counting Ones
+2,5,44,0.000869,20,0,2X,Counting Ones
+2,6,50,0.000921,20,0,2X,Counting Ones
+2,7,40,0.000787,20,0,2X,Counting Ones
+2,8,44,0.000813,20,0,2X,Counting Ones
+2,9,40,0.000783,20,0,2X,Counting Ones
+2,10,44,0.000822,20,0,2X,Counting Ones
+3,1,43,0.001955,40,0,2X,Counting Ones
+3,2,43,0.002077,40,0,2X,Counting Ones
+3,3,43,0.002042,40,0,2X,Counting Ones
+3,4,39,0.001464,40,0,2X,Counting Ones
+3,5,41,0.001569,40,0,2X,Counting Ones
+3,6,42,0.001581,40,0,2X,Counting Ones
+3,7,16,0.000581,40,1,2X,Counting Ones
+3,8,41,0.001586,40,0,2X,Counting Ones
+3,9,40,0.001588,40,0,2X,Counting Ones
+3,10,48,0.001536,40,0,2X,Counting Ones
+4,1,38,0.002780,80,0,2X,Counting Ones
+4,2,45,0.003799,80,0,2X,Counting Ones
+4,3,40,0.003075,80,0,2X,Counting Ones
+4,4,42,0.003426,80,0,2X,Counting Ones
+4,5,43,0.002904,80,0,2X,Counting Ones
+4,6,43,0.002662,80,0,2X,Counting Ones
+4,7,42,0.001572,80,0,2X,Counting Ones
+4,8,40,0.001063,80,0,2X,Counting Ones
+4,9,41,0.001067,80,0,2X,Counting Ones
+4,10,43,0.002412,80,0,2X,Counting Ones
+5,1,43,0.006963,160,0,2X,Counting Ones
+5,2,42,0.006730,160,0,2X,Counting Ones
+5,3,18,0.002262,160,1,2X,Counting Ones
+5,4,42,0.003672,160,0,2X,Counting Ones
+5,5,42,0.002152,160,0,2X,Counting Ones
+5,6,17,0.000858,160,1,2X,Counting Ones
+5,7,43,0.003910,160,0,2X,Counting Ones
+5,8,40,0.003575,160,0,2X,Counting Ones
+5,9,16,0.001580,160,1,2X,Counting Ones
+5,10,43,0.003367,160,0,2X,Counting Ones
+6,1,14,0.005214,320,1,2X,Counting Ones
+6,2,42,0.011968,320,0,2X,Counting Ones
+6,3,47,0.006437,320,0,2X,Counting Ones
+6,4,41,0.006886,320,0,2X,Counting Ones
+6,5,42,0.005845,320,0,2X,Counting Ones
+6,6,42,0.004368,320,0,2X,Counting Ones
+6,7,43,0.004458,320,0,2X,Counting Ones
+6,8,43,0.004780,320,0,2X,Counting Ones
+6,9,40,0.004176,320,0,2X,Counting Ones
+6,10,43,0.004479,320,0,2X,Counting Ones
+7,1,42,0.023671,640,0,2X,Counting Ones
+7,2,41,0.011700,640,0,2X,Counting Ones
+7,3,44,0.012682,640,0,2X,Counting Ones
+7,4,43,0.011894,640,0,2X,Counting Ones
+7,5,41,0.010481,640,0,2X,Counting Ones
+7,6,19,0.004439,640,1,2X,Counting Ones
+7,7,41,0.009646,640,0,2X,Counting Ones
+7,8,16,0.003496,640,1,2X,Counting Ones
+7,9,43,0.008863,640,0,2X,Counting Ones
+7,10,41,0.008494,640,0,2X,Counting Ones
+8,1,41,0.022685,640,0,2X,Counting Ones
+8,2,15,0.005254,640,1,2X,Counting Ones
+8,3,16,0.005917,640,1,2X,Counting Ones
+8,4,41,0.014341,640,0,2X,Counting Ones
+8,5,43,0.012856,640,0,2X,Counting Ones
+8,6,16,0.004021,640,1,2X,Counting Ones
+8,7,16,0.003784,640,1,2X,Counting Ones
+8,8,42,0.009809,640,0,2X,Counting Ones
+8,9,42,0.008984,640,0,2X,Counting Ones
+8,10,15,0.003021,640,1,2X,Counting Ones
+9,1,15,0.017278,1280,1,2X,Counting Ones
+9,2,17,0.014744,1280,1,2X,Counting Ones
+9,3,42,0.017378,1280,0,2X,Counting Ones
+9,4,43,0.017729,1280,0,2X,Counting Ones
+9,5,14,0.006192,1280,1,2X,Counting Ones
+9,6,20,0.008864,1280,1,2X,Counting Ones
+9,7,16,0.006505,1280,1,2X,Counting Ones
+9,8,17,0.006948,1280,1,2X,Counting Ones
+9,9,16,0.006691,1280,1,2X,Counting Ones
+9,10,16,0.007700,1280,1,2X,Counting Ones
+10,1,12,0.020042,2560,1,2X,Counting Ones
+10,2,15,0.012113,2560,1,2X,Counting Ones
+10,3,14,0.011406,2560,1,2X,Counting Ones
+10,4,12,0.009668,2560,1,2X,Counting Ones
+10,5,15,0.012169,2560,1,2X,Counting Ones
+10,6,42,0.034487,2560,0,2X,Counting Ones
+10,7,12,0.010492,2560,1,2X,Counting Ones
+10,8,41,0.035807,2560,0,2X,Counting Ones
+10,9,14,0.012108,2560,1,2X,Counting Ones
+10,10,13,0.011227,2560,1,2X,Counting Ones
+11,1,13,0.033569,5120,1,2X,Counting Ones
+11,2,15,0.029446,5120,1,2X,Counting Ones
+11,3,13,0.021730,5120,1,2X,Counting Ones
+11,4,16,0.026369,5120,1,2X,Counting Ones
+11,5,14,0.026693,5120,1,2X,Counting Ones
+11,6,14,0.024062,5120,1,2X,Counting Ones
+11,7,14,0.022936,5120,1,2X,Counting Ones
+11,8,13,0.021134,5120,1,2X,Counting Ones
+11,9,14,0.022399,5120,1,2X,Counting Ones
+11,10,11,0.017013,5120,1,2X,Counting Ones
+12,1,16,0.036500,3840,1,2X,Counting Ones
+12,2,13,0.020800,3840,1,2X,Counting Ones
+12,3,13,0.016668,3840,1,2X,Counting Ones
+12,4,14,0.016725,3840,1,2X,Counting Ones
+12,5,14,0.016867,3840,1,2X,Counting Ones
+12,6,14,0.017559,3840,1,2X,Counting Ones
+12,7,15,0.018450,3840,1,2X,Counting Ones
+12,8,14,0.017118,3840,1,2X,Counting Ones
+12,9,14,0.017710,3840,1,2X,Counting Ones
+12,10,14,0.017589,3840,1,2X,Counting Ones
+13,1,14,0.024428,3200,1,2X,Counting Ones
+13,2,42,0.054574,3200,0,2X,Counting Ones
+13,3,16,0.016531,3200,1,2X,Counting Ones
+13,4,16,0.016041,3200,1,2X,Counting Ones
+13,5,15,0.014798,3200,1,2X,Counting Ones
+13,6,13,0.012689,3200,1,2X,Counting Ones
+13,7,15,0.015492,3200,1,2X,Counting Ones
+13,8,14,0.014143,3200,1,2X,Counting Ones
+13,9,14,0.014289,3200,1,2X,Counting Ones
+13,10,15,0.015264,3200,1,2X,Counting Ones
+14,1,15,0.027891,2880,1,2X,Counting Ones
+14,2,16,0.020175,2880,1,2X,Counting Ones
+14,3,42,0.044808,2880,0,2X,Counting Ones
+14,4,14,0.012736,2880,1,2X,Counting Ones
+14,5,15,0.015398,2880,1,2X,Counting Ones
+14,6,14,0.013661,2880,1,2X,Counting Ones
+14,7,15,0.014289,2880,1,2X,Counting Ones
+14,8,13,0.011900,2880,1,2X,Counting Ones
+14,9,16,0.015140,2880,1,2X,Counting Ones
+14,10,14,0.013316,2880,1,2X,Counting Ones
+15,1,14,0.025540,2720,1,2X,Counting Ones
+15,2,19,0.023091,2720,1,2X,Counting Ones
+15,3,13,0.014651,2720,1,2X,Counting Ones
+15,4,13,0.012606,2720,1,2X,Counting Ones
+15,5,15,0.013201,2720,1,2X,Counting Ones
+15,6,14,0.011947,2720,1,2X,Counting Ones
+15,7,14,0.012893,2720,1,2X,Counting Ones
+15,8,42,0.038465,2720,0,2X,Counting Ones
+15,9,14,0.012953,2720,1,2X,Counting Ones
+15,10,15,0.013316,2720,1,2X,Counting Ones
+16,1,15,0.022794,2640,1,2X,Counting Ones
+16,2,15,0.020668,2640,1,2X,Counting Ones
+16,3,15,0.016965,2640,1,2X,Counting Ones
+16,4,13,0.012184,2640,1,2X,Counting Ones
+16,5,13,0.011217,2640,1,2X,Counting Ones
+16,6,14,0.011540,2640,1,2X,Counting Ones
+16,7,16,0.015056,2640,1,2X,Counting Ones
+16,8,42,0.035210,2640,0,2X,Counting Ones
+16,9,14,0.011294,2640,1,2X,Counting Ones
+16,10,15,0.012163,2640,1,2X,Counting Ones
+17,1,14,0.024575,2600,1,2X,Counting Ones
+17,2,12,0.017416,2600,1,2X,Counting Ones
+17,3,14,0.012240,2600,1,2X,Counting Ones
+17,4,14,0.011709,2600,1,2X,Counting Ones
+17,5,15,0.012384,2600,1,2X,Counting Ones
+17,6,15,0.012303,2600,1,2X,Counting Ones
+17,7,13,0.010351,2600,1,2X,Counting Ones
+17,8,16,0.014188,2600,1,2X,Counting Ones
+17,9,14,0.012623,2600,1,2X,Counting Ones
+17,10,14,0.012792,2600,1,2X,Counting Ones
+18,1,14,0.028629,2560,1,2X,Counting Ones
+18,2,42,0.042543,2560,0,2X,Counting Ones
+18,3,15,0.013237,2560,1,2X,Counting Ones
+18,4,17,0.013839,2560,1,2X,Counting Ones
+18,5,15,0.012334,2560,1,2X,Counting Ones
+18,6,42,0.044467,2560,0,2X,Counting Ones
+18,7,15,0.023291,2560,1,2X,Counting Ones
+18,8,15,0.018987,2560,1,2X,Counting Ones
+18,9,12,0.010322,2560,1,2X,Counting Ones
+18,10,14,0.012102,2560,1,2X,Counting Ones
+19,1,17,0.024232,2580,1,2X,Counting Ones
+19,2,14,0.010936,2580,1,2X,Counting Ones
+19,3,15,0.012377,2580,1,2X,Counting Ones
+19,4,15,0.012391,2580,1,2X,Counting Ones
+19,5,14,0.011380,2580,1,2X,Counting Ones
+19,6,13,0.010540,2580,1,2X,Counting Ones
+19,7,14,0.011408,2580,1,2X,Counting Ones
+19,8,15,0.012435,2580,1,2X,Counting Ones
+19,9,13,0.011867,2580,1,2X,Counting Ones
+19,10,13,0.011443,2580,1,2X,Counting Ones
+20,1,13,0.022009,2570,1,2X,Counting Ones
+20,2,15,0.012018,2570,1,2X,Counting Ones
+20,3,13,0.010658,2570,1,2X,Counting Ones
+20,4,15,0.012241,2570,1,2X,Counting Ones
+20,5,15,0.012959,2570,1,2X,Counting Ones
+20,6,14,0.012141,2570,1,2X,Counting Ones
+20,7,15,0.012358,2570,1,2X,Counting Ones
+20,8,15,0.012175,2570,1,2X,Counting Ones
+20,9,16,0.012953,2570,1,2X,Counting Ones
+20,10,43,0.035912,2570,0,2X,Counting Ones
+21,1,15,0.027777,2570,1,2X,Counting Ones
+21,2,16,0.020816,2570,1,2X,Counting Ones
+21,3,15,0.012902,2570,1,2X,Counting Ones
+21,4,14,0.011180,2570,1,2X,Counting Ones
+21,5,14,0.011308,2570,1,2X,Counting Ones
+21,6,41,0.034413,2570,0,2X,Counting Ones
+21,7,15,0.013183,2570,1,2X,Counting Ones
+21,8,14,0.011446,2570,1,2X,Counting Ones
+21,9,15,0.012342,2570,1,2X,Counting Ones
+21,10,16,0.013144,2570,1,2X,Counting Ones
+22,1,41,0.062122,2564,0,2X,Counting Ones
+22,2,15,0.013936,2564,1,2X,Counting Ones
+22,3,19,0.022148,2564,1,2X,Counting Ones
+22,4,15,0.012160,2564,1,2X,Counting Ones
+22,5,14,0.011258,2564,1,2X,Counting Ones
+22,6,15,0.012286,2564,1,2X,Counting Ones
+22,7,14,0.013471,2564,1,2X,Counting Ones
+22,8,14,0.012485,2564,1,2X,Counting Ones
+22,9,15,0.012475,2564,1,2X,Counting Ones
+22,10,15,0.012329,2564,1,2X,Counting Ones
+23,1,16,0.027740,2560,1,2X,Counting Ones
+23,2,16,0.019402,2560,1,2X,Counting Ones
+23,3,42,0.034387,2560,0,2X,Counting Ones
+23,4,15,0.012068,2560,1,2X,Counting Ones
+23,5,13,0.010521,2560,1,2X,Counting Ones
+23,6,14,0.011830,2560,1,2X,Counting Ones
+23,7,15,0.014224,2560,1,2X,Counting Ones
+23,8,16,0.013851,2560,1,2X,Counting Ones
+23,9,12,0.010103,2560,1,2X,Counting Ones
+23,10,15,0.012349,2560,1,2X,Counting Ones
+24,1,13,0.018453,1920,1,2X,Counting Ones
+24,2,18,0.018814,1920,1,2X,Counting Ones
+24,3,43,0.034709,1920,0,2X,Counting Ones
+24,4,43,0.027569,1920,0,2X,Counting Ones
+24,5,42,0.027839,1920,0,2X,Counting Ones
+24,6,17,0.010595,1920,1,2X,Counting Ones
+24,7,12,0.007185,1920,1,2X,Counting Ones
+24,8,16,0.009732,1920,1,2X,Counting Ones
+24,9,14,0.008615,1920,1,2X,Counting Ones
+24,10,14,0.009963,1920,1,2X,Counting Ones
+25,1,15,0.018311,1920,1,2X,Counting Ones
+25,2,16,0.010038,1920,1,2X,Counting Ones
+25,3,16,0.011709,1920,1,2X,Counting Ones
+25,4,13,0.011406,1920,1,2X,Counting Ones
+25,5,14,0.011109,1920,1,2X,Counting Ones
+25,6,43,0.028850,1920,0,2X,Counting Ones
+25,7,14,0.008414,1920,1,2X,Counting Ones
+25,8,14,0.010230,1920,1,2X,Counting Ones
+25,9,14,0.009581,1920,1,2X,Counting Ones
+25,10,13,0.008023,1920,1,2X,Counting Ones
+26,1,17,0.027309,2240,1,2X,Counting Ones
+26,2,15,0.018090,2240,1,2X,Counting Ones
+26,3,13,0.013111,2240,1,2X,Counting Ones
+26,4,16,0.013731,2240,1,2X,Counting Ones
+26,5,14,0.010569,2240,1,2X,Counting Ones
+26,6,15,0.010646,2240,1,2X,Counting Ones
+26,7,14,0.009950,2240,1,2X,Counting Ones
+26,8,17,0.012091,2240,1,2X,Counting Ones
+26,9,15,0.010813,2240,1,2X,Counting Ones
+26,10,15,0.010651,2240,1,2X,Counting Ones
+27,1,18,0.025448,2080,1,2X,Counting Ones
+27,2,14,0.014038,2080,1,2X,Counting Ones
+27,3,13,0.010767,2080,1,2X,Counting Ones
+27,4,16,0.013344,2080,1,2X,Counting Ones
+27,5,19,0.014169,2080,1,2X,Counting Ones
+27,6,15,0.009865,2080,1,2X,Counting Ones
+27,7,42,0.028358,2080,0,2X,Counting Ones
+27,8,17,0.013360,2080,1,2X,Counting Ones
+27,9,15,0.010272,2080,1,2X,Counting Ones
+27,10,17,0.011402,2080,1,2X,Counting Ones
+28,1,13,0.022575,2000,1,2X,Counting Ones
+28,2,15,0.016811,2000,1,2X,Counting Ones
+28,3,12,0.008971,2000,1,2X,Counting Ones
+28,4,18,0.014715,2000,1,2X,Counting Ones
+28,5,14,0.010032,2000,1,2X,Counting Ones
+28,6,14,0.009330,2000,1,2X,Counting Ones
+28,7,19,0.012194,2000,1,2X,Counting Ones
+28,8,11,0.006779,2000,1,2X,Counting Ones
+28,9,42,0.028631,2000,0,2X,Counting Ones
+28,10,16,0.010258,2000,1,2X,Counting Ones
+29,1,14,0.016320,1960,1,2X,Counting Ones
+29,2,15,0.011736,1960,1,2X,Counting Ones
+29,3,12,0.010315,1960,1,2X,Counting Ones
+29,4,13,0.011169,1960,1,2X,Counting Ones
+29,5,15,0.012065,1960,1,2X,Counting Ones
+29,6,13,0.008963,1960,1,2X,Counting Ones
+29,7,14,0.009148,1960,1,2X,Counting Ones
+29,8,15,0.009336,1960,1,2X,Counting Ones
+29,9,14,0.008652,1960,1,2X,Counting Ones
+29,10,18,0.012580,1960,1,2X,Counting Ones
+30,1,15,0.022671,1940,1,2X,Counting Ones
+30,2,13,0.010902,1940,1,2X,Counting Ones
+30,3,14,0.010751,1940,1,2X,Counting Ones
+30,4,42,0.032702,1940,0,2X,Counting Ones
+30,5,16,0.010468,1940,1,2X,Counting Ones
+30,6,13,0.007930,1940,1,2X,Counting Ones
+30,7,15,0.009105,1940,1,2X,Counting Ones
+30,8,15,0.009956,1940,1,2X,Counting Ones
+30,9,43,0.028140,1940,0,2X,Counting Ones
+30,10,14,0.008645,1940,1,2X,Counting Ones
+31,1,16,0.018199,1950,1,2X,Counting Ones
+31,2,14,0.012969,1950,1,2X,Counting Ones
+31,3,15,0.014360,1950,1,2X,Counting Ones
+31,4,14,0.011509,1950,1,2X,Counting Ones
+31,5,16,0.011787,1950,1,2X,Counting Ones
+31,6,14,0.009305,1950,1,2X,Counting Ones
+31,7,17,0.010653,1950,1,2X,Counting Ones
+31,8,13,0.007904,1950,1,2X,Counting Ones
+31,9,16,0.010678,1950,1,2X,Counting Ones
+31,10,15,0.016722,1950,1,2X,Counting Ones
+32,1,16,0.023902,1944,1,2X,Counting Ones
+32,2,15,0.014844,1944,1,2X,Counting Ones
+32,3,15,0.011747,1944,1,2X,Counting Ones
+32,4,41,0.030556,1944,0,2X,Counting Ones
+32,5,14,0.008572,1944,1,2X,Counting Ones
+32,6,42,0.026229,1944,0,2X,Counting Ones
+32,7,15,0.010396,1944,1,2X,Counting Ones
+32,8,18,0.011661,1944,1,2X,Counting Ones
+32,9,16,0.009744,1944,1,2X,Counting Ones
+32,10,16,0.009846,1944,1,2X,Counting Ones
+33,1,14,0.021197,1946,1,2X,Counting Ones
+33,2,14,0.011805,1946,1,2X,Counting Ones
+33,3,14,0.012125,1946,1,2X,Counting Ones
+33,4,13,0.010328,1946,1,2X,Counting Ones
+33,5,14,0.011296,1946,1,2X,Counting Ones
+33,6,42,0.029501,1946,0,2X,Counting Ones
+33,7,16,0.009929,1946,1,2X,Counting Ones
+33,8,15,0.009827,1946,1,2X,Counting Ones
+33,9,13,0.008209,1946,1,2X,Counting Ones
+33,10,42,0.027040,1946,0,2X,Counting Ones
+34,1,14,0.023200,1946,1,2X,Counting Ones
+34,2,42,0.028628,1946,0,2X,Counting Ones
+34,3,16,0.009460,1946,1,2X,Counting Ones
+34,4,14,0.008371,1946,1,2X,Counting Ones
+34,5,13,0.007690,1946,1,2X,Counting Ones
+34,6,16,0.009680,1946,1,2X,Counting Ones
+34,7,14,0.008445,1946,1,2X,Counting Ones
+34,8,41,0.026729,1946,0,2X,Counting Ones
+34,9,14,0.008699,1946,1,2X,Counting Ones
+34,10,14,0.008477,1946,1,2X,Counting Ones
+35,1,15,0.022464,1948,1,2X,Counting Ones
+35,2,17,0.018076,1948,1,2X,Counting Ones
+35,3,12,0.007192,1948,1,2X,Counting Ones
+35,4,15,0.009505,1948,1,2X,Counting Ones
+35,5,42,0.028167,1948,0,2X,Counting Ones
+35,6,16,0.009836,1948,1,2X,Counting Ones
+35,7,15,0.009454,1948,1,2X,Counting Ones
+35,8,16,0.009979,1948,1,2X,Counting Ones
+35,9,14,0.008511,1948,1,2X,Counting Ones
+35,10,16,0.009949,1948,1,2X,Counting Ones
+36,1,41,0.000386,10,0,UX,Counting Ones
+36,2,40,0.000373,10,0,UX,Counting Ones
+36,3,41,0.000380,10,0,UX,Counting Ones
+36,4,39,0.000372,10,0,UX,Counting Ones
+36,5,42,0.000402,10,0,UX,Counting Ones
+36,6,41,0.000384,10,0,UX,Counting Ones
+36,7,38,0.000391,10,0,UX,Counting Ones
+36,8,16,0.000227,10,1,UX,Counting Ones
+36,9,43,0.000463,10,0,UX,Counting Ones
+36,10,38,0.000407,10,0,UX,Counting Ones
+37,1,19,0.000622,20,1,UX,Counting Ones
+37,2,18,0.000654,20,1,UX,Counting Ones
+37,3,21,0.000645,20,1,UX,Counting Ones
+37,4,40,0.001039,20,0,UX,Counting Ones
+37,5,22,0.000504,20,1,UX,Counting Ones
+37,6,16,0.000378,20,1,UX,Counting Ones
+37,7,41,0.000895,20,0,UX,Counting Ones
+37,8,19,0.000473,20,1,UX,Counting Ones
+37,9,17,0.000401,20,1,UX,Counting Ones
+37,10,17,0.000418,20,1,UX,Counting Ones
+38,1,17,0.000438,16,1,UX,Counting Ones
+38,2,18,0.000352,16,1,UX,Counting Ones
+38,3,18,0.000322,16,1,UX,Counting Ones
+38,4,17,0.000268,16,1,UX,Counting Ones
+38,5,19,0.000333,16,1,UX,Counting Ones
+38,6,25,0.000419,16,1,UX,Counting Ones
+38,7,19,0.000546,16,1,UX,Counting Ones
+38,8,12,0.000329,16,1,UX,Counting Ones
+38,9,17,0.000425,16,1,UX,Counting Ones
+38,10,20,0.000396,16,1,UX,Counting Ones
+39,1,41,0.000736,12,0,UX,Counting Ones
+39,2,39,0.000653,12,0,UX,Counting Ones
+39,3,40,0.000520,12,0,UX,Counting Ones
+39,4,21,0.000306,12,1,UX,Counting Ones
+39,5,42,0.000547,12,0,UX,Counting Ones
+39,6,39,0.000680,12,0,UX,Counting Ones
+39,7,40,0.000625,12,0,UX,Counting Ones
+39,8,17,0.000313,12,1,UX,Counting Ones
+39,9,43,0.000663,12,0,UX,Counting Ones
+39,10,44,0.000641,12,0,UX,Counting Ones
+40,1,20,0.000510,14,1,UX,Counting Ones
+40,2,40,0.000520,14,0,UX,Counting Ones
+40,3,16,0.000223,14,1,UX,Counting Ones
+40,4,41,0.000512,14,0,UX,Counting Ones
+40,5,40,0.000684,14,0,UX,Counting Ones
+40,6,36,0.000716,14,0,UX,Counting Ones
+40,7,41,0.000635,14,0,UX,Counting Ones
+40,8,16,0.000264,14,1,UX,Counting Ones
+40,9,42,0.000617,14,0,UX,Counting Ones
+40,10,18,0.000301,14,1,UX,Counting Ones
+41,1,20,0.000506,16,1,UX,Counting Ones
+41,2,14,0.000360,16,1,UX,Counting Ones
+41,3,20,0.000496,16,1,UX,Counting Ones
+41,4,19,0.000351,16,1,UX,Counting Ones
+41,5,40,0.000715,16,0,UX,Counting Ones
+41,6,17,0.000268,16,1,UX,Counting Ones
+41,7,41,0.000592,16,0,UX,Counting Ones
+41,8,44,0.000700,16,0,UX,Counting Ones
+41,9,19,0.000476,16,1,UX,Counting Ones
+41,10,17,0.000415,16,1,UX,Counting Ones
+42,1,21,0.000594,16,1,UX,Counting Ones
+42,2,41,0.000932,16,0,UX,Counting Ones
+42,3,20,0.000394,16,1,UX,Counting Ones
+42,4,21,0.000429,16,1,UX,Counting Ones
+42,5,18,0.000357,16,1,UX,Counting Ones
+42,6,19,0.000339,16,1,UX,Counting Ones
+42,7,18,0.000286,16,1,UX,Counting Ones
+42,8,16,0.000276,16,1,UX,Counting Ones
+42,9,20,0.000322,16,1,UX,Counting Ones
+42,10,44,0.000877,16,0,UX,Counting Ones
+43,1,41,0.000962,16,0,UX,Counting Ones
+43,2,43,0.000949,16,0,UX,Counting Ones
+43,3,23,0.000431,16,1,UX,Counting Ones
+43,4,16,0.000359,16,1,UX,Counting Ones
+43,5,18,0.000346,16,1,UX,Counting Ones
+43,6,21,0.000517,16,1,UX,Counting Ones
+43,7,44,0.000974,16,0,UX,Counting Ones
+43,8,19,0.000470,16,1,UX,Counting Ones
+43,9,18,0.000447,16,1,UX,Counting Ones
+43,10,19,0.000473,16,1,UX,Counting Ones
+44,1,17,0.000281,16,1,UX,Counting Ones
+44,2,16,0.000255,16,1,UX,Counting Ones
+44,3,41,0.000692,16,0,UX,Counting Ones
+44,4,18,0.000337,16,1,UX,Counting Ones
+44,5,21,0.000393,16,1,UX,Counting Ones
+44,6,17,0.000325,16,1,UX,Counting Ones
+44,7,18,0.000361,16,1,UX,Counting Ones
+44,8,43,0.000843,16,0,UX,Counting Ones
+44,9,19,0.000308,16,1,UX,Counting Ones
+44,10,18,0.000293,16,1,UX,Counting Ones
+45,1,13,0.000387,18,1,UX,Counting Ones
+45,2,37,0.000957,18,0,UX,Counting Ones
+45,3,17,0.000374,18,1,UX,Counting Ones
+45,4,16,0.000353,18,1,UX,Counting Ones
+45,5,18,0.000422,18,1,UX,Counting Ones
+45,6,15,0.000321,18,1,UX,Counting Ones
+45,7,17,0.000315,18,1,UX,Counting Ones
+45,8,16,0.000297,18,1,UX,Counting Ones
+45,9,42,0.000903,18,0,UX,Counting Ones
+45,10,20,0.000564,18,1,UX,Counting Ones
+46,1,17,0.000494,18,1,UX,Counting Ones
+46,2,17,0.000504,18,1,UX,Counting Ones
+46,3,38,0.000743,18,0,UX,Counting Ones
+46,4,18,0.000387,18,1,UX,Counting Ones
+46,5,43,0.000785,18,0,UX,Counting Ones
+46,6,22,0.000404,18,1,UX,Counting Ones
+46,7,16,0.000295,18,1,UX,Counting Ones
+46,8,18,0.000352,18,1,UX,Counting Ones
+46,9,21,0.000658,18,1,UX,Counting Ones
+46,10,43,0.000989,18,0,UX,Counting Ones
+47,1,18,0.000507,18,1,UX,Counting Ones
+47,2,22,0.000613,18,1,UX,Counting Ones
+47,3,43,0.000819,18,0,UX,Counting Ones
+47,4,41,0.000782,18,0,UX,Counting Ones
+47,5,18,0.000330,18,1,UX,Counting Ones
+47,6,20,0.000356,18,1,UX,Counting Ones
+47,7,21,0.000399,18,1,UX,Counting Ones
+47,8,19,0.000498,18,1,UX,Counting Ones
+47,9,20,0.000544,18,1,UX,Counting Ones
+47,10,18,0.000489,18,1,UX,Counting Ones
+48,1,20,0.000541,20,1,UX,Counting Ones
+48,2,17,0.000345,20,1,UX,Counting Ones
+48,3,19,0.000371,20,1,UX,Counting Ones
+48,4,18,0.000356,20,1,UX,Counting Ones
+48,5,19,0.000313,20,1,UX,Counting Ones
+48,6,20,0.000173,20,1,UX,Counting Ones
+48,7,19,0.000174,20,1,UX,Counting Ones
+48,8,19,0.000181,20,1,UX,Counting Ones
+48,9,23,0.000192,20,1,UX,Counting Ones
+48,10,17,0.000143,20,1,UX,Counting Ones
+49,1,19,0.000703,20,1,UX,Counting Ones
+49,2,16,0.000542,20,1,UX,Counting Ones
+49,3,21,0.000572,20,1,UX,Counting Ones
+49,4,18,0.000433,20,1,UX,Counting Ones
+49,5,19,0.000453,20,1,UX,Counting Ones
+49,6,19,0.000429,20,1,UX,Counting Ones
+49,7,17,0.000340,20,1,UX,Counting Ones
+49,8,18,0.000370,20,1,UX,Counting Ones
+49,9,20,0.000427,20,1,UX,Counting Ones
+49,10,15,0.000311,20,1,UX,Counting Ones
+50,1,16,0.000735,20,1,UX,Counting Ones
+50,2,17,0.000540,20,1,UX,Counting Ones
+50,3,20,0.000604,20,1,UX,Counting Ones
+50,4,17,0.000502,20,1,UX,Counting Ones
+50,5,19,0.000453,20,1,UX,Counting Ones
+50,6,19,0.000500,20,1,UX,Counting Ones
+50,7,18,0.000454,20,1,UX,Counting Ones
+50,8,20,0.000515,20,1,UX,Counting Ones
+50,9,19,0.000480,20,1,UX,Counting Ones
+50,10,38,0.000676,20,0,UX,Counting Ones
+51,1,41,0.000671,10,0,2X,Non-Deceptive Non-TL Trap
+51,2,42,0.000557,10,0,2X,Non-Deceptive Non-TL Trap
+51,3,38,0.000445,10,0,2X,Non-Deceptive Non-TL Trap
+51,4,44,0.000478,10,0,2X,Non-Deceptive Non-TL Trap
+51,5,45,0.000595,10,0,2X,Non-Deceptive Non-TL Trap
+51,6,40,0.000579,10,0,2X,Non-Deceptive Non-TL Trap
+51,7,31,0.000443,10,0,2X,Non-Deceptive Non-TL Trap
+51,8,30,0.000338,10,0,2X,Non-Deceptive Non-TL Trap
+51,9,36,0.000397,10,0,2X,Non-Deceptive Non-TL Trap
+51,10,28,0.000329,10,0,2X,Non-Deceptive Non-TL Trap
+52,1,70,0.065541,1280,0,2X,Non-Deceptive Non-TL Trap
+52,2,81,0.044385,1280,0,2X,Non-Deceptive Non-TL Trap
+52,3,88,0.044004,1280,0,2X,Non-Deceptive Non-TL Trap
+52,4,64,0.032676,1280,0,2X,Non-Deceptive Non-TL Trap
+52,5,38,0.023028,1280,1,2X,Non-Deceptive Non-TL Trap
+52,6,75,0.040259,1280,0,2X,Non-Deceptive Non-TL Trap
+52,7,66,0.032928,1280,0,2X,Non-Deceptive Non-TL Trap
+52,8,31,0.018222,1280,1,2X,Non-Deceptive Non-TL Trap
+52,9,62,0.030759,1280,0,2X,Non-Deceptive Non-TL Trap
+52,10,64,0.032335,1280,0,2X,Non-Deceptive Non-TL Trap
+53,1,83,0.104211,2560,0,2X,Non-Deceptive Non-TL Trap
+53,2,72,0.072018,2560,0,2X,Non-Deceptive Non-TL Trap
+53,3,36,0.042345,2560,1,2X,Non-Deceptive Non-TL Trap
+53,4,100,0.103009,2560,0,2X,Non-Deceptive Non-TL Trap
+53,5,69,0.071034,2560,0,2X,Non-Deceptive Non-TL Trap
+53,6,31,0.035832,2560,1,2X,Non-Deceptive Non-TL Trap
+53,7,36,0.042494,2560,1,2X,Non-Deceptive Non-TL Trap
+53,8,80,0.080837,2560,0,2X,Non-Deceptive Non-TL Trap
+53,9,29,0.033100,2560,1,2X,Non-Deceptive Non-TL Trap
+53,10,32,0.037144,2560,1,2X,Non-Deceptive Non-TL Trap
+54,1,76,0.169000,5120,0,2X,Non-Deceptive Non-TL Trap
+54,2,79,0.163533,5120,0,2X,Non-Deceptive Non-TL Trap
+54,3,27,0.062542,5120,1,2X,Non-Deceptive Non-TL Trap
+54,4,32,0.079002,5120,1,2X,Non-Deceptive Non-TL Trap
+54,5,84,0.171323,5120,0,2X,Non-Deceptive Non-TL Trap
+54,6,29,0.067303,5120,1,2X,Non-Deceptive Non-TL Trap
+54,7,29,0.067147,5120,1,2X,Non-Deceptive Non-TL Trap
+54,8,77,0.154837,5120,0,2X,Non-Deceptive Non-TL Trap
+54,9,34,0.078482,5120,1,2X,Non-Deceptive Non-TL Trap
+54,10,75,0.151353,5120,0,2X,Non-Deceptive Non-TL Trap
+55,1,39,0.199359,10240,1,2X,Non-Deceptive Non-TL Trap
+55,2,38,0.183159,10240,1,2X,Non-Deceptive Non-TL Trap
+55,3,79,0.333241,10240,0,2X,Non-Deceptive Non-TL Trap
+55,4,35,0.163932,10240,1,2X,Non-Deceptive Non-TL Trap
+55,5,30,0.146929,10240,1,2X,Non-Deceptive Non-TL Trap
+55,6,34,0.159496,10240,1,2X,Non-Deceptive Non-TL Trap
+55,7,26,0.123448,10240,1,2X,Non-Deceptive Non-TL Trap
+55,8,31,0.147117,10240,1,2X,Non-Deceptive Non-TL Trap
+55,9,32,0.152619,10240,1,2X,Non-Deceptive Non-TL Trap
+55,10,33,0.180222,10240,1,2X,Non-Deceptive Non-TL Trap
+56,1,36,0.144853,7680,1,2X,Non-Deceptive Non-TL Trap
+56,2,28,0.100915,7680,1,2X,Non-Deceptive Non-TL Trap
+56,3,70,0.223241,7680,0,2X,Non-Deceptive Non-TL Trap
+56,4,27,0.095287,7680,1,2X,Non-Deceptive Non-TL Trap
+56,5,76,0.236811,7680,0,2X,Non-Deceptive Non-TL Trap
+56,6,33,0.113512,7680,1,2X,Non-Deceptive Non-TL Trap
+56,7,38,0.133986,7680,1,2X,Non-Deceptive Non-TL Trap
+56,8,33,0.115266,7680,1,2X,Non-Deceptive Non-TL Trap
+56,9,31,0.109564,7680,1,2X,Non-Deceptive Non-TL Trap
+56,10,23,0.084052,7680,1,2X,Non-Deceptive Non-TL Trap
+57,1,33,0.157654,8960,1,2X,Non-Deceptive Non-TL Trap
+57,2,27,0.114606,8960,1,2X,Non-Deceptive Non-TL Trap
+57,3,44,0.185176,8960,1,2X,Non-Deceptive Non-TL Trap
+57,4,28,0.117210,8960,1,2X,Non-Deceptive Non-TL Trap
+57,5,28,0.118049,8960,1,2X,Non-Deceptive Non-TL Trap
+57,6,29,0.120291,8960,1,2X,Non-Deceptive Non-TL Trap
+57,7,28,0.116364,8960,1,2X,Non-Deceptive Non-TL Trap
+57,8,33,0.135817,8960,1,2X,Non-Deceptive Non-TL Trap
+57,9,28,0.114198,8960,1,2X,Non-Deceptive Non-TL Trap
+57,10,30,0.123968,8960,1,2X,Non-Deceptive Non-TL Trap
+58,1,24,0.103922,8320,1,2X,Non-Deceptive Non-TL Trap
+58,2,22,0.085256,8320,1,2X,Non-Deceptive Non-TL Trap
+58,3,28,0.108885,8320,1,2X,Non-Deceptive Non-TL Trap
+58,4,27,0.106929,8320,1,2X,Non-Deceptive Non-TL Trap
+58,5,27,0.105156,8320,1,2X,Non-Deceptive Non-TL Trap
+58,6,31,0.123896,8320,1,2X,Non-Deceptive Non-TL Trap
+58,7,38,0.145083,8320,1,2X,Non-Deceptive Non-TL Trap
+58,8,79,0.267435,8320,0,2X,Non-Deceptive Non-TL Trap
+58,9,28,0.105421,8320,1,2X,Non-Deceptive Non-TL Trap
+58,10,30,0.115057,8320,1,2X,Non-Deceptive Non-TL Trap
+59,1,33,0.144667,8000,1,2X,Non-Deceptive Non-TL Trap
+59,2,30,0.111874,8000,1,2X,Non-Deceptive Non-TL Trap
+59,3,33,0.128968,8000,1,2X,Non-Deceptive Non-TL Trap
+59,4,35,0.132192,8000,1,2X,Non-Deceptive Non-TL Trap
+59,5,28,0.106508,8000,1,2X,Non-Deceptive Non-TL Trap
+59,6,29,0.108151,8000,1,2X,Non-Deceptive Non-TL Trap
+59,7,25,0.093769,8000,1,2X,Non-Deceptive Non-TL Trap
+59,8,27,0.100598,8000,1,2X,Non-Deceptive Non-TL Trap
+59,9,35,0.129904,8000,1,2X,Non-Deceptive Non-TL Trap
+59,10,33,0.120470,8000,1,2X,Non-Deceptive Non-TL Trap
+60,1,34,0.130217,7840,1,2X,Non-Deceptive Non-TL Trap
+60,2,30,0.110199,7840,1,2X,Non-Deceptive Non-TL Trap
+60,3,87,0.283668,7840,0,2X,Non-Deceptive Non-TL Trap
+60,4,27,0.096584,7840,1,2X,Non-Deceptive Non-TL Trap
+60,5,75,0.237731,7840,0,2X,Non-Deceptive Non-TL Trap
+60,6,28,0.103039,7840,1,2X,Non-Deceptive Non-TL Trap
+60,7,36,0.128013,7840,1,2X,Non-Deceptive Non-TL Trap
+60,8,30,0.109199,7840,1,2X,Non-Deceptive Non-TL Trap
+60,9,81,0.253790,7840,0,2X,Non-Deceptive Non-TL Trap
+60,10,31,0.108906,7840,1,2X,Non-Deceptive Non-TL Trap
+61,1,28,0.124298,7920,1,2X,Non-Deceptive Non-TL Trap
+61,2,25,0.092976,7920,1,2X,Non-Deceptive Non-TL Trap
+61,3,28,0.106689,7920,1,2X,Non-Deceptive Non-TL Trap
+61,4,67,0.221912,7920,0,2X,Non-Deceptive Non-TL Trap
+61,5,32,0.115544,7920,1,2X,Non-Deceptive Non-TL Trap
+61,6,27,0.098584,7920,1,2X,Non-Deceptive Non-TL Trap
+61,7,25,0.093786,7920,1,2X,Non-Deceptive Non-TL Trap
+61,8,29,0.108049,7920,1,2X,Non-Deceptive Non-TL Trap
+61,9,70,0.225132,7920,0,2X,Non-Deceptive Non-TL Trap
+61,10,31,0.110731,7920,1,2X,Non-Deceptive Non-TL Trap
+62,1,30,0.134295,7960,1,2X,Non-Deceptive Non-TL Trap
+62,2,32,0.117014,7960,1,2X,Non-Deceptive Non-TL Trap
+62,3,26,0.100894,7960,1,2X,Non-Deceptive Non-TL Trap
+62,4,25,0.098120,7960,1,2X,Non-Deceptive Non-TL Trap
+62,5,28,0.106681,7960,1,2X,Non-Deceptive Non-TL Trap
+62,6,34,0.127878,7960,1,2X,Non-Deceptive Non-TL Trap
+62,7,29,0.105464,7960,1,2X,Non-Deceptive Non-TL Trap
+62,8,28,0.102965,7960,1,2X,Non-Deceptive Non-TL Trap
+62,9,28,0.106600,7960,1,2X,Non-Deceptive Non-TL Trap
+62,10,33,0.120433,7960,1,2X,Non-Deceptive Non-TL Trap
+63,1,29,0.127599,7940,1,2X,Non-Deceptive Non-TL Trap
+63,2,64,0.209996,7940,0,2X,Non-Deceptive Non-TL Trap
+63,3,28,0.108102,7940,1,2X,Non-Deceptive Non-TL Trap
+63,4,74,0.240256,7940,0,2X,Non-Deceptive Non-TL Trap
+63,5,100,0.314707,7940,0,2X,Non-Deceptive Non-TL Trap
+63,6,34,0.120666,7940,1,2X,Non-Deceptive Non-TL Trap
+63,7,38,0.137219,7940,1,2X,Non-Deceptive Non-TL Trap
+63,8,28,0.102825,7940,1,2X,Non-Deceptive Non-TL Trap
+63,9,39,0.138808,7940,1,2X,Non-Deceptive Non-TL Trap
+63,10,35,0.127118,7940,1,2X,Non-Deceptive Non-TL Trap
+64,1,33,0.131325,7950,1,2X,Non-Deceptive Non-TL Trap
+64,2,75,0.249998,7950,0,2X,Non-Deceptive Non-TL Trap
+64,3,35,0.127426,7950,1,2X,Non-Deceptive Non-TL Trap
+64,4,66,0.211056,7950,0,2X,Non-Deceptive Non-TL Trap
+64,5,26,0.107708,7950,1,2X,Non-Deceptive Non-TL Trap
+64,6,27,0.102793,7950,1,2X,Non-Deceptive Non-TL Trap
+64,7,33,0.120959,7950,1,2X,Non-Deceptive Non-TL Trap
+64,8,31,0.147654,7950,1,2X,Non-Deceptive Non-TL Trap
+64,9,28,0.101180,7950,1,2X,Non-Deceptive Non-TL Trap
+64,10,39,0.140430,7950,1,2X,Non-Deceptive Non-TL Trap
+65,1,31,0.134718,7956,1,2X,Non-Deceptive Non-TL Trap
+65,2,33,0.125917,7956,1,2X,Non-Deceptive Non-TL Trap
+65,3,32,0.120213,7956,1,2X,Non-Deceptive Non-TL Trap
+65,4,29,0.106539,7956,1,2X,Non-Deceptive Non-TL Trap
+65,5,74,0.237075,7956,0,2X,Non-Deceptive Non-TL Trap
+65,6,32,0.114398,7956,1,2X,Non-Deceptive Non-TL Trap
+65,7,38,0.137620,7956,1,2X,Non-Deceptive Non-TL Trap
+65,8,27,0.099017,7956,1,2X,Non-Deceptive Non-TL Trap
+65,9,34,0.126645,7956,1,2X,Non-Deceptive Non-TL Trap
+65,10,29,0.106232,7956,1,2X,Non-Deceptive Non-TL Trap
+66,1,37,0.000580,10,0,UX,Non-Deceptive Non-TL Trap
+66,2,44,0.000614,10,0,UX,Non-Deceptive Non-TL Trap
+66,3,51,0.000596,10,0,UX,Non-Deceptive Non-TL Trap
+66,4,40,0.000510,10,0,UX,Non-Deceptive Non-TL Trap
+66,5,54,0.000690,10,0,UX,Non-Deceptive Non-TL Trap
+66,6,40,0.000597,10,0,UX,Non-Deceptive Non-TL Trap
+66,7,39,0.000497,10,0,UX,Non-Deceptive Non-TL Trap
+66,8,40,0.000580,10,0,UX,Non-Deceptive Non-TL Trap
+66,9,55,0.000727,10,0,UX,Non-Deceptive Non-TL Trap
+66,10,49,0.000650,10,0,UX,Non-Deceptive Non-TL Trap
+67,1,49,0.001131,20,0,UX,Non-Deceptive Non-TL Trap
+67,2,56,0.001394,20,0,UX,Non-Deceptive Non-TL Trap
+67,3,68,0.001817,20,0,UX,Non-Deceptive Non-TL Trap
+67,4,48,0.001283,20,0,UX,Non-Deceptive Non-TL Trap
+67,5,53,0.001417,20,0,UX,Non-Deceptive Non-TL Trap
+67,6,67,0.001894,20,0,UX,Non-Deceptive Non-TL Trap
+67,7,56,0.001458,20,0,UX,Non-Deceptive Non-TL Trap
+67,8,45,0.001147,20,0,UX,Non-Deceptive Non-TL Trap
+67,9,52,0.001320,20,0,UX,Non-Deceptive Non-TL Trap
+67,10,59,0.001259,20,0,UX,Non-Deceptive Non-TL Trap
+68,1,72,0.004018,40,0,UX,Non-Deceptive Non-TL Trap
+68,2,75,0.004347,40,0,UX,Non-Deceptive Non-TL Trap
+68,3,68,0.004143,40,0,UX,Non-Deceptive Non-TL Trap
+68,4,70,0.003715,40,0,UX,Non-Deceptive Non-TL Trap
+68,5,69,0.002905,40,0,UX,Non-Deceptive Non-TL Trap
+68,6,69,0.001321,40,0,UX,Non-Deceptive Non-TL Trap
+68,7,67,0.001740,40,0,UX,Non-Deceptive Non-TL Trap
+68,8,80,0.002291,40,0,UX,Non-Deceptive Non-TL Trap
+68,9,55,0.001041,40,0,UX,Non-Deceptive Non-TL Trap
+68,10,79,0.001467,40,0,UX,Non-Deceptive Non-TL Trap
+69,1,30,0.048261,1280,1,UX,Non-Deceptive Non-TL Trap
+69,2,29,0.026746,1280,1,UX,Non-Deceptive Non-TL Trap
+69,3,32,0.024692,1280,1,UX,Non-Deceptive Non-TL Trap
+69,4,30,0.023353,1280,1,UX,Non-Deceptive Non-TL Trap
+69,5,28,0.022814,1280,1,UX,Non-Deceptive Non-TL Trap
+69,6,32,0.026159,1280,1,UX,Non-Deceptive Non-TL Trap
+69,7,31,0.024344,1280,1,UX,Non-Deceptive Non-TL Trap
+69,8,30,0.023527,1280,1,UX,Non-Deceptive Non-TL Trap
+69,9,32,0.026370,1280,1,UX,Non-Deceptive Non-TL Trap
+69,10,30,0.025009,1280,1,UX,Non-Deceptive Non-TL Trap
+70,1,39,0.037717,640,1,UX,Non-Deceptive Non-TL Trap
+70,2,32,0.018629,640,1,UX,Non-Deceptive Non-TL Trap
+70,3,35,0.014917,640,1,UX,Non-Deceptive Non-TL Trap
+70,4,33,0.014385,640,1,UX,Non-Deceptive Non-TL Trap
+70,5,30,0.012349,640,1,UX,Non-Deceptive Non-TL Trap
+70,6,30,0.011957,640,1,UX,Non-Deceptive Non-TL Trap
+70,7,28,0.011436,640,1,UX,Non-Deceptive Non-TL Trap
+70,8,40,0.016608,640,1,UX,Non-Deceptive Non-TL Trap
+70,9,31,0.012711,640,1,UX,Non-Deceptive Non-TL Trap
+70,10,29,0.011935,640,1,UX,Non-Deceptive Non-TL Trap
+71,1,34,0.018784,320,1,UX,Non-Deceptive Non-TL Trap
+71,2,32,0.007129,320,1,UX,Non-Deceptive Non-TL Trap
+71,3,35,0.007367,320,1,UX,Non-Deceptive Non-TL Trap
+71,4,40,0.007593,320,1,UX,Non-Deceptive Non-TL Trap
+71,5,37,0.007137,320,1,UX,Non-Deceptive Non-TL Trap
+71,6,32,0.007116,320,1,UX,Non-Deceptive Non-TL Trap
+71,7,29,0.007003,320,1,UX,Non-Deceptive Non-TL Trap
+71,8,39,0.009648,320,1,UX,Non-Deceptive Non-TL Trap
+71,9,36,0.008038,320,1,UX,Non-Deceptive Non-TL Trap
+71,10,33,0.007132,320,1,UX,Non-Deceptive Non-TL Trap
+72,1,62,0.006639,80,0,UX,Non-Deceptive Non-TL Trap
+72,2,65,0.007696,80,0,UX,Non-Deceptive Non-TL Trap
+72,3,36,0.003110,80,1,UX,Non-Deceptive Non-TL Trap
+72,4,59,0.002302,80,0,UX,Non-Deceptive Non-TL Trap
+72,5,38,0.001933,80,1,UX,Non-Deceptive Non-TL Trap
+72,6,37,0.001720,80,1,UX,Non-Deceptive Non-TL Trap
+72,7,58,0.002284,80,0,UX,Non-Deceptive Non-TL Trap
+72,8,67,0.002786,80,0,UX,Non-Deceptive Non-TL Trap
+72,9,68,0.002920,80,0,UX,Non-Deceptive Non-TL Trap
+72,10,55,0.002733,80,1,UX,Non-Deceptive Non-TL Trap
+73,1,59,0.014773,160,1,UX,Non-Deceptive Non-TL Trap
+73,2,48,0.010022,160,1,UX,Non-Deceptive Non-TL Trap
+73,3,36,0.006242,160,1,UX,Non-Deceptive Non-TL Trap
+73,4,30,0.003046,160,1,UX,Non-Deceptive Non-TL Trap
+73,5,36,0.003351,160,1,UX,Non-Deceptive Non-TL Trap
+73,6,44,0.004190,160,1,UX,Non-Deceptive Non-TL Trap
+73,7,36,0.003890,160,1,UX,Non-Deceptive Non-TL Trap
+73,8,28,0.002899,160,1,UX,Non-Deceptive Non-TL Trap
+73,9,82,0.006801,160,0,UX,Non-Deceptive Non-TL Trap
+73,10,43,0.004489,160,1,UX,Non-Deceptive Non-TL Trap
+74,1,36,0.011420,160,1,UX,Non-Deceptive Non-TL Trap
+74,2,44,0.009246,160,1,UX,Non-Deceptive Non-TL Trap
+74,3,38,0.003495,160,1,UX,Non-Deceptive Non-TL Trap
+74,4,74,0.005544,160,0,UX,Non-Deceptive Non-TL Trap
+74,5,33,0.003172,160,1,UX,Non-Deceptive Non-TL Trap
+74,6,44,0.004178,160,1,UX,Non-Deceptive Non-TL Trap
+74,7,40,0.003811,160,1,UX,Non-Deceptive Non-TL Trap
+74,8,50,0.004499,160,1,UX,Non-Deceptive Non-TL Trap
+74,9,41,0.003893,160,1,UX,Non-Deceptive Non-TL Trap
+74,10,32,0.003138,160,1,UX,Non-Deceptive Non-TL Trap
+75,1,37,0.008319,120,1,UX,Non-Deceptive Non-TL Trap
+75,2,54,0.011329,120,1,UX,Non-Deceptive Non-TL Trap
+75,3,46,0.003129,120,1,UX,Non-Deceptive Non-TL Trap
+75,4,35,0.002951,120,1,UX,Non-Deceptive Non-TL Trap
+75,5,37,0.004215,120,1,UX,Non-Deceptive Non-TL Trap
+75,6,46,0.006588,120,1,UX,Non-Deceptive Non-TL Trap
+75,7,49,0.005904,120,1,UX,Non-Deceptive Non-TL Trap
+75,8,32,0.003937,120,1,UX,Non-Deceptive Non-TL Trap
+75,9,48,0.005238,120,1,UX,Non-Deceptive Non-TL Trap
+75,10,66,0.005551,120,0,UX,Non-Deceptive Non-TL Trap
+76,1,27,0.004662,100,1,UX,Non-Deceptive Non-TL Trap
+76,2,33,0.005999,100,1,UX,Non-Deceptive Non-TL Trap
+76,3,67,0.009100,100,0,UX,Non-Deceptive Non-TL Trap
+76,4,35,0.003717,100,1,UX,Non-Deceptive Non-TL Trap
+76,5,33,0.004030,100,1,UX,Non-Deceptive Non-TL Trap
+76,6,62,0.006821,100,0,UX,Non-Deceptive Non-TL Trap
+76,7,53,0.005462,100,1,UX,Non-Deceptive Non-TL Trap
+76,8,70,0.006309,100,0,UX,Non-Deceptive Non-TL Trap
+76,9,66,0.004449,100,0,UX,Non-Deceptive Non-TL Trap
+76,10,66,0.003570,100,0,UX,Non-Deceptive Non-TL Trap
+77,1,42,0.007606,110,1,UX,Non-Deceptive Non-TL Trap
+77,2,85,0.010542,110,0,UX,Non-Deceptive Non-TL Trap
+77,3,96,0.004730,110,1,UX,Non-Deceptive Non-TL Trap
+77,4,49,0.003123,110,1,UX,Non-Deceptive Non-TL Trap
+77,5,36,0.002325,110,1,UX,Non-Deceptive Non-TL Trap
+77,6,41,0.002944,110,1,UX,Non-Deceptive Non-TL Trap
+77,7,79,0.004903,110,0,UX,Non-Deceptive Non-TL Trap
+77,8,45,0.003297,110,1,UX,Non-Deceptive Non-TL Trap
+77,9,32,0.002655,110,1,UX,Non-Deceptive Non-TL Trap
+77,10,31,0.002367,110,1,UX,Non-Deceptive Non-TL Trap
+78,1,78,0.012798,116,0,UX,Non-Deceptive Non-TL Trap
+78,2,40,0.007006,116,1,UX,Non-Deceptive Non-TL Trap
+78,3,29,0.004977,116,1,UX,Non-Deceptive Non-TL Trap
+78,4,35,0.004539,116,1,UX,Non-Deceptive Non-TL Trap
+78,5,61,0.003724,116,0,UX,Non-Deceptive Non-TL Trap
+78,6,34,0.002893,116,1,UX,Non-Deceptive Non-TL Trap
+78,7,60,0.003928,116,0,UX,Non-Deceptive Non-TL Trap
+78,8,38,0.003154,116,1,UX,Non-Deceptive Non-TL Trap
+78,9,40,0.003585,116,1,UX,Non-Deceptive Non-TL Trap
+78,10,27,0.002316,116,1,UX,Non-Deceptive Non-TL Trap
+79,1,32,0.006612,118,1,UX,Non-Deceptive Non-TL Trap
+79,2,29,0.006271,118,1,UX,Non-Deceptive Non-TL Trap
+79,3,43,0.006880,118,1,UX,Non-Deceptive Non-TL Trap
+79,4,42,0.005102,118,1,UX,Non-Deceptive Non-TL Trap
+79,5,97,0.010899,118,0,UX,Non-Deceptive Non-TL Trap
+79,6,33,0.004239,118,1,UX,Non-Deceptive Non-TL Trap
+79,7,95,0.008574,118,1,UX,Non-Deceptive Non-TL Trap
+79,8,34,0.003664,118,1,UX,Non-Deceptive Non-TL Trap
+79,9,30,0.003163,118,1,UX,Non-Deceptive Non-TL Trap
+79,10,40,0.003754,118,1,UX,Non-Deceptive Non-TL Trap
+80,1,66,0.006979,118,1,UX,Non-Deceptive Non-TL Trap
+80,2,70,0.004340,118,0,UX,Non-Deceptive Non-TL Trap
+80,3,91,0.005021,118,0,UX,Non-Deceptive Non-TL Trap
+80,4,36,0.002459,118,1,UX,Non-Deceptive Non-TL Trap
+80,5,75,0.004678,118,0,UX,Non-Deceptive Non-TL Trap
+80,6,35,0.002563,118,1,UX,Non-Deceptive Non-TL Trap
+80,7,45,0.003253,118,1,UX,Non-Deceptive Non-TL Trap
+80,8,29,0.002134,118,1,UX,Non-Deceptive Non-TL Trap
+80,9,38,0.002696,118,1,UX,Non-Deceptive Non-TL Trap
+80,10,38,0.002751,118,1,UX,Non-Deceptive Non-TL Trap
+81,1,67,0.013215,120,1,UX,Non-Deceptive Non-TL Trap
+81,2,37,0.006899,120,1,UX,Non-Deceptive Non-TL Trap
+81,3,51,0.008033,120,1,UX,Non-Deceptive Non-TL Trap
+81,4,68,0.005221,120,0,UX,Non-Deceptive Non-TL Trap
+81,5,74,0.007053,120,0,UX,Non-Deceptive Non-TL Trap
+81,6,39,0.005044,120,1,UX,Non-Deceptive Non-TL Trap
+81,7,25,0.003048,120,1,UX,Non-Deceptive Non-TL Trap
+81,8,49,0.005214,120,1,UX,Non-Deceptive Non-TL Trap
+81,9,32,0.003406,120,1,UX,Non-Deceptive Non-TL Trap
+81,10,40,0.003821,120,1,UX,Non-Deceptive Non-TL Trap
+82,1,37,0.007874,120,1,UX,Non-Deceptive Non-TL Trap
+82,2,73,0.011316,120,1,UX,Non-Deceptive Non-TL Trap
+82,3,37,0.004794,120,1,UX,Non-Deceptive Non-TL Trap
+82,4,77,0.006012,120,1,UX,Non-Deceptive Non-TL Trap
+82,5,39,0.004690,120,1,UX,Non-Deceptive Non-TL Trap
+82,6,79,0.005565,120,1,UX,Non-Deceptive Non-TL Trap
+82,7,30,0.002256,120,1,UX,Non-Deceptive Non-TL Trap
+82,8,47,0.003733,120,1,UX,Non-Deceptive Non-TL Trap
+82,9,45,0.003651,120,1,UX,Non-Deceptive Non-TL Trap
+82,10,59,0.003884,120,0,UX,Non-Deceptive Non-TL Trap
+83,1,34,0.000370,10,0,2X,Deceptive Non-TL Trap
+83,2,41,0.000556,10,0,2X,Deceptive Non-TL Trap
+83,3,34,0.000590,10,0,2X,Deceptive Non-TL Trap
+83,4,41,0.000557,10,0,2X,Deceptive Non-TL Trap
+83,5,37,0.000435,10,0,2X,Deceptive Non-TL Trap
+83,6,32,0.000349,10,0,2X,Deceptive Non-TL Trap
+83,7,38,0.000432,10,0,2X,Deceptive Non-TL Trap
+83,8,41,0.000264,10,0,2X,Deceptive Non-TL Trap
+83,9,41,0.000168,10,0,2X,Deceptive Non-TL Trap
+83,10,36,0.000171,10,0,2X,Deceptive Non-TL Trap
+84,1,48,0.001472,20,0,2X,Deceptive Non-TL Trap
+84,2,44,0.001123,20,0,2X,Deceptive Non-TL Trap
+84,3,47,0.001060,20,0,2X,Deceptive Non-TL Trap
+84,4,50,0.001211,20,0,2X,Deceptive Non-TL Trap
+84,5,58,0.001526,20,0,2X,Deceptive Non-TL Trap
+84,6,34,0.000709,20,0,2X,Deceptive Non-TL Trap
+84,7,54,0.001226,20,0,2X,Deceptive Non-TL Trap
+84,8,50,0.001137,20,0,2X,Deceptive Non-TL Trap
+84,9,45,0.001198,20,0,2X,Deceptive Non-TL Trap
+84,10,48,0.001277,20,0,2X,Deceptive Non-TL Trap
+85,1,53,0.003194,40,0,2X,Deceptive Non-TL Trap
+85,2,67,0.003491,40,0,2X,Deceptive Non-TL Trap
+85,3,75,0.003798,40,0,2X,Deceptive Non-TL Trap
+85,4,69,0.003031,40,0,2X,Deceptive Non-TL Trap
+85,5,61,0.002513,40,0,2X,Deceptive Non-TL Trap
+85,6,60,0.002298,40,0,2X,Deceptive Non-TL Trap
+85,7,58,0.002260,40,0,2X,Deceptive Non-TL Trap
+85,8,87,0.001720,40,0,2X,Deceptive Non-TL Trap
+85,9,47,0.000958,40,0,2X,Deceptive Non-TL Trap
+85,10,63,0.001119,40,0,2X,Deceptive Non-TL Trap
+86,1,68,0.013403,160,0,2X,Deceptive Non-TL Trap
+86,2,66,0.010020,160,0,2X,Deceptive Non-TL Trap
+86,3,56,0.006830,160,0,2X,Deceptive Non-TL Trap
+86,4,60,0.005356,160,0,2X,Deceptive Non-TL Trap
+86,5,54,0.003553,160,0,2X,Deceptive Non-TL Trap
+86,6,84,0.005755,160,0,2X,Deceptive Non-TL Trap
+86,7,62,0.004743,160,0,2X,Deceptive Non-TL Trap
+86,8,74,0.006147,160,0,2X,Deceptive Non-TL Trap
+86,9,86,0.007103,160,0,2X,Deceptive Non-TL Trap
+86,10,94,0.007220,160,0,2X,Deceptive Non-TL Trap
+87,1,100,0.085802,1280,0,2X,Deceptive Non-TL Trap
+87,2,100,0.054139,1280,0,2X,Deceptive Non-TL Trap
+87,3,83,0.043039,1280,0,2X,Deceptive Non-TL Trap
+87,4,74,0.040875,1280,0,2X,Deceptive Non-TL Trap
+87,5,100,0.048680,1280,0,2X,Deceptive Non-TL Trap
+87,6,98,0.051410,1280,0,2X,Deceptive Non-TL Trap
+87,7,100,0.047814,1280,0,2X,Deceptive Non-TL Trap
+87,8,100,0.054457,1280,0,2X,Deceptive Non-TL Trap
+87,9,100,0.054482,1280,0,2X,Deceptive Non-TL Trap
+87,10,100,0.052430,1280,0,2X,Deceptive Non-TL Trap
+88,1,100,0.237097,5120,0,2X,Deceptive Non-TL Trap
+88,2,100,0.207883,5120,0,2X,Deceptive Non-TL Trap
+88,3,100,0.227879,5120,0,2X,Deceptive Non-TL Trap
+88,4,100,0.217677,5120,0,2X,Deceptive Non-TL Trap
+88,5,100,0.215214,5120,0,2X,Deceptive Non-TL Trap
+88,6,100,0.203091,5120,0,2X,Deceptive Non-TL Trap
+88,7,100,0.213219,5120,0,2X,Deceptive Non-TL Trap
+88,8,100,0.219936,5120,0,2X,Deceptive Non-TL Trap
+88,9,100,0.213637,5120,0,2X,Deceptive Non-TL Trap
+88,10,100,0.225667,5120,0,2X,Deceptive Non-TL Trap
+89,1,100,2.040579,40000,0,2X,Deceptive Non-TL Trap
+89,2,100,2.061576,40000,0,2X,Deceptive Non-TL Trap
+89,3,100,2.044635,40000,0,2X,Deceptive Non-TL Trap
+89,4,100,2.061786,40000,0,2X,Deceptive Non-TL Trap
+89,5,100,2.052104,40000,0,2X,Deceptive Non-TL Trap
+89,6,100,2.084552,40000,0,2X,Deceptive Non-TL Trap
+89,7,100,2.092520,40000,0,2X,Deceptive Non-TL Trap
+89,8,100,2.066918,40000,0,2X,Deceptive Non-TL Trap
+89,9,100,2.070033,40000,0,2X,Deceptive Non-TL Trap
+89,10,100,2.041118,40000,0,2X,Deceptive Non-TL Trap
+90,1,55,0.001056,10,0,UX,Deceptive Non-TL Trap
+90,2,42,0.000574,10,0,UX,Deceptive Non-TL Trap
+90,3,46,0.000627,10,0,UX,Deceptive Non-TL Trap
+90,4,74,0.001262,10,0,UX,Deceptive Non-TL Trap
+90,5,37,0.000575,10,0,UX,Deceptive Non-TL Trap
+90,6,41,0.000651,10,0,UX,Deceptive Non-TL Trap
+90,7,40,0.000626,10,0,UX,Deceptive Non-TL Trap
+90,8,41,0.000554,10,0,UX,Deceptive Non-TL Trap
+90,9,46,0.000677,10,0,UX,Deceptive Non-TL Trap
+90,10,44,0.000632,10,0,UX,Deceptive Non-TL Trap
+91,1,100,0.114448,1280,0,UX,Deceptive Non-TL Trap
+91,2,100,0.078096,1280,0,UX,Deceptive Non-TL Trap
+91,3,100,0.083702,1280,0,UX,Deceptive Non-TL Trap
+91,4,100,0.077353,1280,0,UX,Deceptive Non-TL Trap
+91,5,100,0.076666,1280,0,UX,Deceptive Non-TL Trap
+91,6,100,0.080430,1280,0,UX,Deceptive Non-TL Trap
+91,7,100,0.075753,1280,0,UX,Deceptive Non-TL Trap
+91,8,100,0.083716,1280,0,UX,Deceptive Non-TL Trap
+91,9,100,0.095748,1280,0,UX,Deceptive Non-TL Trap
+91,10,100,0.074639,1280,0,UX,Deceptive Non-TL Trap
+92,1,100,2.737677,40000,0,UX,Deceptive Non-TL Trap
+92,2,100,2.737480,40000,0,UX,Deceptive Non-TL Trap
+92,3,100,2.718765,40000,0,UX,Deceptive Non-TL Trap
+92,4,100,2.746961,40000,0,UX,Deceptive Non-TL Trap
+92,5,100,2.744291,40000,0,UX,Deceptive Non-TL Trap
+92,6,100,2.760832,40000,0,UX,Deceptive Non-TL Trap
+92,7,100,2.760867,40000,0,UX,Deceptive Non-TL Trap
+92,8,100,2.739868,40000,0,UX,Deceptive Non-TL Trap
+92,9,100,2.728710,40000,0,UX,Deceptive Non-TL Trap
+92,10,100,2.752804,40000,0,UX,Deceptive Non-TL Trap
+93,1,1000,25.870160,40000,0,UX,Deceptive Non-TL Trap
+93,2,1000,26.414990,40000,0,UX,Deceptive Non-TL Trap
+93,3,1000,27.269604,40000,0,UX,Deceptive Non-TL Trap
+93,4,981,26.625766,40000,1,UX,Deceptive Non-TL Trap
+93,5,1000,29.066978,40000,0,UX,Deceptive Non-TL Trap
+93,6,1000,28.760942,40000,0,UX,Deceptive Non-TL Trap
+93,7,1000,33.609423,40000,0,UX,Deceptive Non-TL Trap
+93,8,1000,33.060835,40000,0,UX,Deceptive Non-TL Trap
+93,9,1000,30.721131,40000,0,UX,Deceptive Non-TL Trap
+93,10,1000,28.479008,40000,0,UX,Deceptive Non-TL Trap
+94,1,10,0.000112,10,0,2X,Counting Ones
+94,2,10,0.000102,10,0,2X,Counting Ones
+94,3,10,0.000101,10,0,2X,Counting Ones
+94,4,10,0.000100,10,0,2X,Counting Ones
+94,5,10,0.000082,10,0,2X,Counting Ones
+94,6,10,0.000082,10,0,2X,Counting Ones
+94,7,10,0.000128,10,0,2X,Counting Ones
+94,8,10,0.000097,10,0,2X,Counting Ones
+94,9,10,0.000101,10,0,2X,Counting Ones
+94,10,10,0.000092,10,0,2X,Counting Ones
+95,1,10,0.000328,10,0,2X,Counting Ones
+95,2,10,0.000251,10,0,2X,Counting Ones
+95,3,10,0.000243,10,0,2X,Counting Ones
+95,4,10,0.000248,10,0,2X,Counting Ones
+95,5,10,0.000245,10,0,2X,Counting Ones
+95,6,10,0.000273,10,0,2X,Counting Ones
+95,7,10,0.000221,10,0,2X,Counting Ones
+95,8,10,0.000205,10,0,2X,Counting Ones
+95,9,10,0.000216,10,0,2X,Counting Ones
+95,10,10,0.000219,10,0,2X,Counting Ones
+96,1,45,0.000651,10,0,UX,Deceptive Non-TL Trap
+96,2,48,0.000818,10,0,UX,Deceptive Non-TL Trap
+96,3,48,0.000912,10,0,UX,Deceptive Non-TL Trap
+96,4,44,0.000853,10,0,UX,Deceptive Non-TL Trap
+96,5,44,0.000604,10,0,UX,Deceptive Non-TL Trap
+96,6,41,0.000521,10,0,UX,Deceptive Non-TL Trap
+96,7,59,0.000796,10,0,UX,Deceptive Non-TL Trap
+96,8,49,0.000719,10,0,UX,Deceptive Non-TL Trap
+96,9,45,0.000594,10,0,UX,Deceptive Non-TL Trap
+96,10,60,0.000488,10,0,UX,Deceptive Non-TL Trap
+97,1,68,0.002499,20,0,UX,Deceptive Non-TL Trap
+97,2,61,0.001802,20,0,UX,Deceptive Non-TL Trap
+97,3,54,0.001743,20,0,UX,Deceptive Non-TL Trap
+97,4,57,0.001444,20,0,UX,Deceptive Non-TL Trap
+97,5,64,0.001840,20,0,UX,Deceptive Non-TL Trap
+97,6,51,0.001363,20,0,UX,Deceptive Non-TL Trap
+97,7,63,0.001782,20,0,UX,Deceptive Non-TL Trap
+97,8,64,0.001902,20,0,UX,Deceptive Non-TL Trap
+97,9,62,0.001662,20,0,UX,Deceptive Non-TL Trap
+97,10,85,0.001900,20,0,UX,Deceptive Non-TL Trap
+98,1,84,0.006313,40,0,UX,Deceptive Non-TL Trap
+98,2,85,0.005204,40,0,UX,Deceptive Non-TL Trap
+98,3,93,0.005092,40,0,UX,Deceptive Non-TL Trap
+98,4,82,0.004383,40,0,UX,Deceptive Non-TL Trap
+98,5,89,0.003715,40,0,UX,Deceptive Non-TL Trap
+98,6,50,0.002027,40,0,UX,Deceptive Non-TL Trap
+98,7,93,0.004058,40,0,UX,Deceptive Non-TL Trap
+98,8,77,0.002825,40,0,UX,Deceptive Non-TL Trap
+98,9,80,0.003203,40,0,UX,Deceptive Non-TL Trap
+98,10,100,0.003176,40,0,UX,Deceptive Non-TL Trap
+99,1,78,0.009606,80,0,UX,Deceptive Non-TL Trap
+99,2,100,0.012304,80,0,UX,Deceptive Non-TL Trap
+99,3,86,0.007496,80,0,UX,Deceptive Non-TL Trap
+99,4,84,0.006361,80,0,UX,Deceptive Non-TL Trap
+99,5,100,0.008126,80,0,UX,Deceptive Non-TL Trap
+99,6,100,0.007302,80,0,UX,Deceptive Non-TL Trap
+99,7,100,0.006638,80,0,UX,Deceptive Non-TL Trap
+99,8,100,0.006300,80,0,UX,Deceptive Non-TL Trap
+99,9,100,0.005525,80,0,UX,Deceptive Non-TL Trap
+99,10,100,0.004749,80,0,UX,Deceptive Non-TL Trap
+100,1,139,0.015489,80,0,UX,Deceptive Non-TL Trap
+100,2,143,0.011320,80,0,UX,Deceptive Non-TL Trap
+100,3,64,0.004881,80,0,UX,Deceptive Non-TL Trap
+100,4,72,0.005515,80,0,UX,Deceptive Non-TL Trap
+100,5,125,0.007736,80,0,UX,Deceptive Non-TL Trap
+100,6,109,0.006250,80,0,UX,Deceptive Non-TL Trap
+100,7,106,0.006873,80,0,UX,Deceptive Non-TL Trap
+100,8,101,0.005246,80,0,UX,Deceptive Non-TL Trap
+100,9,88,0.004368,80,0,UX,Deceptive Non-TL Trap
+100,10,136,0.007408,80,0,UX,Deceptive Non-TL Trap
+101,1,178,0.034712,160,0,UX,Deceptive Non-TL Trap
+101,2,152,0.020537,160,0,UX,Deceptive Non-TL Trap
+101,3,94,0.010306,160,0,UX,Deceptive Non-TL Trap
+101,4,267,0.027579,160,0,UX,Deceptive Non-TL Trap
+101,5,103,0.008413,160,0,UX,Deceptive Non-TL Trap
+101,6,185,0.014860,160,0,UX,Deceptive Non-TL Trap
+101,7,272,0.021172,160,0,UX,Deceptive Non-TL Trap
+101,8,156,0.010871,160,0,UX,Deceptive Non-TL Trap
+101,9,190,0.016302,160,0,UX,Deceptive Non-TL Trap
+101,10,172,0.014741,160,0,UX,Deceptive Non-TL Trap
+102,1,325,0.079163,320,1,UX,Deceptive Non-TL Trap
+102,2,375,0.059692,320,0,UX,Deceptive Non-TL Trap
+102,3,336,0.047652,320,0,UX,Deceptive Non-TL Trap
+102,4,443,0.062888,320,0,UX,Deceptive Non-TL Trap
+102,5,233,0.034956,320,0,UX,Deceptive Non-TL Trap
+102,6,272,0.041543,320,0,UX,Deceptive Non-TL Trap
+102,7,309,0.050533,320,0,UX,Deceptive Non-TL Trap
+102,8,351,0.056339,320,0,UX,Deceptive Non-TL Trap
+102,9,268,0.044577,320,0,UX,Deceptive Non-TL Trap
+102,10,353,0.054773,320,0,UX,Deceptive Non-TL Trap
+103,1,450,0.187425,640,0,UX,Deceptive Non-TL Trap
+103,2,437,0.132955,640,0,UX,Deceptive Non-TL Trap
+103,3,505,0.145432,640,0,UX,Deceptive Non-TL Trap
+103,4,462,0.145793,640,0,UX,Deceptive Non-TL Trap
+103,5,323,0.101127,640,0,UX,Deceptive Non-TL Trap
+103,6,274,0.085833,640,0,UX,Deceptive Non-TL Trap
+103,7,282,0.086978,640,0,UX,Deceptive Non-TL Trap
+103,8,533,0.161018,640,0,UX,Deceptive Non-TL Trap
+103,9,606,0.195117,640,0,UX,Deceptive Non-TL Trap
+103,10,499,0.166730,640,1,UX,Deceptive Non-TL Trap
+104,1,451,0.301898,1280,1,UX,Deceptive Non-TL Trap
+104,2,700,0.432490,1280,0,UX,Deceptive Non-TL Trap
+104,3,593,0.357400,1280,0,UX,Deceptive Non-TL Trap
+104,4,459,0.277166,1280,0,UX,Deceptive Non-TL Trap
+104,5,466,0.321884,1280,1,UX,Deceptive Non-TL Trap
+104,6,652,0.455373,1280,1,UX,Deceptive Non-TL Trap
+104,7,640,0.476855,1280,0,UX,Deceptive Non-TL Trap
+104,8,379,0.237631,1280,0,UX,Deceptive Non-TL Trap
+104,9,715,0.447477,1280,0,UX,Deceptive Non-TL Trap
+104,10,567,0.367744,1280,1,UX,Deceptive Non-TL Trap
+105,1,632,0.894530,2560,1,UX,Deceptive Non-TL Trap
+105,2,829,1.171667,2560,1,UX,Deceptive Non-TL Trap
+105,3,655,0.870684,2560,1,UX,Deceptive Non-TL Trap
+105,4,465,0.651987,2560,1,UX,Deceptive Non-TL Trap
+105,5,501,0.655878,2560,1,UX,Deceptive Non-TL Trap
+105,6,792,1.078545,2560,1,UX,Deceptive Non-TL Trap
+105,7,654,0.899740,2560,1,UX,Deceptive Non-TL Trap
+105,8,714,0.959993,2560,1,UX,Deceptive Non-TL Trap
+105,9,512,0.638191,2560,0,UX,Deceptive Non-TL Trap
+105,10,724,1.035193,2560,1,UX,Deceptive Non-TL Trap
+106,1,547,0.593924,2000,1,UX,Deceptive Non-TL Trap
+106,2,559,0.585521,2000,1,UX,Deceptive Non-TL Trap
+106,3,525,0.528100,2000,1,UX,Deceptive Non-TL Trap
+106,4,770,0.846206,2000,1,UX,Deceptive Non-TL Trap
+106,5,668,0.672560,2000,0,UX,Deceptive Non-TL Trap
+106,6,757,0.801702,2000,0,UX,Deceptive Non-TL Trap
+106,7,541,0.542124,2000,1,UX,Deceptive Non-TL Trap
+106,8,648,0.656516,2000,1,UX,Deceptive Non-TL Trap
+106,9,874,0.946581,2000,1,UX,Deceptive Non-TL Trap
+106,10,467,0.444263,2000,1,UX,Deceptive Non-TL Trap
+107,1,539,0.647735,2300,1,UX,Deceptive Non-TL Trap
+107,2,590,0.770530,2300,1,UX,Deceptive Non-TL Trap
+107,3,686,0.787042,2300,0,UX,Deceptive Non-TL Trap
+107,4,700,0.831816,2300,1,UX,Deceptive Non-TL Trap
+107,5,500,0.528000,2300,0,UX,Deceptive Non-TL Trap
+107,6,598,0.710826,2300,1,UX,Deceptive Non-TL Trap
+107,7,491,0.634936,2300,1,UX,Deceptive Non-TL Trap
+107,8,678,0.816198,2300,1,UX,Deceptive Non-TL Trap
+107,9,609,0.687633,2300,1,UX,Deceptive Non-TL Trap
+107,10,546,0.629308,2300,1,UX,Deceptive Non-TL Trap
+108,1,656,0.826466,2400,1,UX,Deceptive Non-TL Trap
+108,2,605,0.737218,2400,1,UX,Deceptive Non-TL Trap
+108,3,711,0.876366,2400,1,UX,Deceptive Non-TL Trap
+108,4,599,0.730925,2400,1,UX,Deceptive Non-TL Trap
+108,5,521,0.659891,2400,1,UX,Deceptive Non-TL Trap
+108,6,718,0.897541,2400,1,UX,Deceptive Non-TL Trap
+108,7,606,0.689750,2400,0,UX,Deceptive Non-TL Trap
+108,8,604,0.733017,2400,1,UX,Deceptive Non-TL Trap
+108,9,521,0.607248,2400,1,UX,Deceptive Non-TL Trap
+108,10,507,0.615940,2400,1,UX,Deceptive Non-TL Trap
+109,1,603,0.767652,2350,1,UX,Deceptive Non-TL Trap
+109,2,676,0.817883,2350,1,UX,Deceptive Non-TL Trap
+109,3,554,0.719738,2350,1,UX,Deceptive Non-TL Trap
+109,4,541,0.620834,2350,1,UX,Deceptive Non-TL Trap
+109,5,628,0.771687,2350,1,UX,Deceptive Non-TL Trap
+109,6,610,0.742638,2350,1,UX,Deceptive Non-TL Trap
+109,7,583,0.728883,2350,1,UX,Deceptive Non-TL Trap
+109,8,619,0.793298,2350,1,UX,Deceptive Non-TL Trap
+109,9,521,0.621858,2350,1,UX,Deceptive Non-TL Trap
+109,10,515,0.641818,2350,1,UX,Deceptive Non-TL Trap
+110,1,724,0.906163,2320,1,UX,Deceptive Non-TL Trap
+110,2,561,0.644015,2320,1,UX,Deceptive Non-TL Trap
+110,3,503,0.634799,2320,1,UX,Deceptive Non-TL Trap
+110,4,506,0.647613,2320,1,UX,Deceptive Non-TL Trap
+110,5,592,0.748572,2320,1,UX,Deceptive Non-TL Trap
+110,6,728,0.868168,2320,1,UX,Deceptive Non-TL Trap
+110,7,519,0.577852,2320,0,UX,Deceptive Non-TL Trap
+110,8,634,0.748111,2320,1,UX,Deceptive Non-TL Trap
+110,9,926,1.111798,2320,0,UX,Deceptive Non-TL Trap
+110,10,688,0.875478,2320,1,UX,Deceptive Non-TL Trap
+111,1,474,0.605997,2340,1,UX,Deceptive Non-TL Trap
+111,2,778,0.909154,2340,0,UX,Deceptive Non-TL Trap
+111,3,689,0.824858,2340,1,UX,Deceptive Non-TL Trap
+111,4,603,0.747946,2340,1,UX,Deceptive Non-TL Trap
+111,5,470,0.600098,2340,1,UX,Deceptive Non-TL Trap
+111,6,763,0.959359,2340,1,UX,Deceptive Non-TL Trap
+111,7,530,0.617182,2340,1,UX,Deceptive Non-TL Trap
+111,8,691,0.833528,2340,0,UX,Deceptive Non-TL Trap
+111,9,672,0.779197,2340,1,UX,Deceptive Non-TL Trap
+111,10,617,0.774256,2340,1,UX,Deceptive Non-TL Trap
+112,1,36,0.001023,10,0,2X,Non-Deceptive TL Trap
+112,2,40,0.000929,10,0,2X,Non-Deceptive TL Trap
+112,3,31,0.000870,10,0,2X,Non-Deceptive TL Trap
+112,4,51,0.001555,10,0,2X,Non-Deceptive TL Trap
+112,5,30,0.000824,10,0,2X,Non-Deceptive TL Trap
+112,6,36,0.000904,10,0,2X,Non-Deceptive TL Trap
+112,7,37,0.001072,10,0,2X,Non-Deceptive TL Trap
+112,8,57,0.001670,10,0,2X,Non-Deceptive TL Trap
+112,9,39,0.001047,10,0,2X,Non-Deceptive TL Trap
+112,10,35,0.000786,10,0,2X,Non-Deceptive TL Trap
+113,1,39,0.002435,20,0,2X,Non-Deceptive TL Trap
+113,2,39,0.002436,20,0,2X,Non-Deceptive TL Trap
+113,3,35,0.001997,20,0,2X,Non-Deceptive TL Trap
+113,4,46,0.002886,20,0,2X,Non-Deceptive TL Trap
+113,5,34,0.001891,20,0,2X,Non-Deceptive TL Trap
+113,6,43,0.002489,20,0,2X,Non-Deceptive TL Trap
+113,7,46,0.002532,20,0,2X,Non-Deceptive TL Trap
+113,8,45,0.002039,20,0,2X,Non-Deceptive TL Trap
+113,9,40,0.001711,20,0,2X,Non-Deceptive TL Trap
+113,10,53,0.002440,20,0,2X,Non-Deceptive TL Trap
+114,1,42,0.002481,40,0,2X,Non-Deceptive TL Trap
+114,2,42,0.002459,40,0,2X,Non-Deceptive TL Trap
+114,3,42,0.002084,40,0,2X,Non-Deceptive TL Trap
+114,4,47,0.002132,40,0,2X,Non-Deceptive TL Trap
+114,5,43,0.002165,40,0,2X,Non-Deceptive TL Trap
+114,6,41,0.001777,40,0,2X,Non-Deceptive TL Trap
+114,7,47,0.002012,40,0,2X,Non-Deceptive TL Trap
+114,8,43,0.001661,40,0,2X,Non-Deceptive TL Trap
+114,9,39,0.001471,40,0,2X,Non-Deceptive TL Trap
+114,10,45,0.001589,40,0,2X,Non-Deceptive TL Trap
+115,1,44,0.004206,80,0,2X,Non-Deceptive TL Trap
+115,2,47,0.004637,80,0,2X,Non-Deceptive TL Trap
+115,3,42,0.003736,80,0,2X,Non-Deceptive TL Trap
+115,4,44,0.003482,80,0,2X,Non-Deceptive TL Trap
+115,5,44,0.003337,80,0,2X,Non-Deceptive TL Trap
+115,6,43,0.003076,80,0,2X,Non-Deceptive TL Trap
+115,7,44,0.003376,80,0,2X,Non-Deceptive TL Trap
+115,8,48,0.003104,80,0,2X,Non-Deceptive TL Trap
+115,9,44,0.002693,80,0,2X,Non-Deceptive TL Trap
+115,10,45,0.002901,80,0,2X,Non-Deceptive TL Trap
+116,1,18,0.015000,640,1,2X,Non-Deceptive TL Trap
+116,2,17,0.011328,640,1,2X,Non-Deceptive TL Trap
+116,3,16,0.009219,640,1,2X,Non-Deceptive TL Trap
+116,4,18,0.008806,640,1,2X,Non-Deceptive TL Trap
+116,5,17,0.007553,640,1,2X,Non-Deceptive TL Trap
+116,6,44,0.014302,640,0,2X,Non-Deceptive TL Trap
+116,7,21,0.006770,640,1,2X,Non-Deceptive TL Trap
+116,8,15,0.004646,640,1,2X,Non-Deceptive TL Trap
+116,9,46,0.011722,640,0,2X,Non-Deceptive TL Trap
+116,10,44,0.011123,640,0,2X,Non-Deceptive TL Trap
+117,1,15,0.023432,1280,1,2X,Non-Deceptive TL Trap
+117,2,46,0.037044,1280,0,2X,Non-Deceptive TL Trap
+117,3,19,0.012849,1280,1,2X,Non-Deceptive TL Trap
+117,4,44,0.022537,1280,0,2X,Non-Deceptive TL Trap
+117,5,18,0.010423,1280,1,2X,Non-Deceptive TL Trap
+117,6,15,0.009001,1280,1,2X,Non-Deceptive TL Trap
+117,7,14,0.008118,1280,1,2X,Non-Deceptive TL Trap
+117,8,46,0.022337,1280,0,2X,Non-Deceptive TL Trap
+117,9,46,0.022523,1280,0,2X,Non-Deceptive TL Trap
+117,10,16,0.009154,1280,1,2X,Non-Deceptive TL Trap
+118,1,16,0.025388,1280,1,2X,Non-Deceptive TL Trap
+118,2,15,0.016324,1280,1,2X,Non-Deceptive TL Trap
+118,3,16,0.013731,1280,1,2X,Non-Deceptive TL Trap
+118,4,16,0.012149,1280,1,2X,Non-Deceptive TL Trap
+118,5,16,0.010290,1280,1,2X,Non-Deceptive TL Trap
+118,6,15,0.008962,1280,1,2X,Non-Deceptive TL Trap
+118,7,43,0.021487,1280,0,2X,Non-Deceptive TL Trap
+118,8,18,0.010338,1280,1,2X,Non-Deceptive TL Trap
+118,9,14,0.008002,1280,1,2X,Non-Deceptive TL Trap
+118,10,14,0.008220,1280,1,2X,Non-Deceptive TL Trap
+119,1,44,0.041019,1000,0,2X,Non-Deceptive TL Trap
+119,2,17,0.012567,1000,1,2X,Non-Deceptive TL Trap
+119,3,43,0.020980,1000,0,2X,Non-Deceptive TL Trap
+119,4,13,0.006427,1000,1,2X,Non-Deceptive TL Trap
+119,5,13,0.006146,1000,1,2X,Non-Deceptive TL Trap
+119,6,45,0.017305,1000,0,2X,Non-Deceptive TL Trap
+119,7,16,0.007185,1000,1,2X,Non-Deceptive TL Trap
+119,8,14,0.006606,1000,1,2X,Non-Deceptive TL Trap
+119,9,16,0.007213,1000,1,2X,Non-Deceptive TL Trap
+119,10,17,0.007667,1000,1,2X,Non-Deceptive TL Trap
+120,1,18,0.022878,1000,1,2X,Non-Deceptive TL Trap
+120,2,18,0.016198,1000,1,2X,Non-Deceptive TL Trap
+120,3,43,0.024599,1000,0,2X,Non-Deceptive TL Trap
+120,4,18,0.009570,1000,1,2X,Non-Deceptive TL Trap
+120,5,16,0.007864,1000,1,2X,Non-Deceptive TL Trap
+120,6,17,0.007897,1000,1,2X,Non-Deceptive TL Trap
+120,7,13,0.005922,1000,1,2X,Non-Deceptive TL Trap
+120,8,15,0.007710,1000,1,2X,Non-Deceptive TL Trap
+120,9,48,0.023457,1000,0,2X,Non-Deceptive TL Trap
+120,10,16,0.007592,1000,1,2X,Non-Deceptive TL Trap
+121,1,43,0.044788,1200,0,2X,Non-Deceptive TL Trap
+121,2,14,0.011313,1200,1,2X,Non-Deceptive TL Trap
+121,3,11,0.007724,1200,1,2X,Non-Deceptive TL Trap
+121,4,46,0.023206,1200,0,2X,Non-Deceptive TL Trap
+121,5,23,0.011731,1200,1,2X,Non-Deceptive TL Trap
+121,6,45,0.020409,1200,0,2X,Non-Deceptive TL Trap
+121,7,43,0.019357,1200,0,2X,Non-Deceptive TL Trap
+121,8,43,0.020078,1200,0,2X,Non-Deceptive TL Trap
+121,9,44,0.020008,1200,0,2X,Non-Deceptive TL Trap
+121,10,15,0.008054,1200,1,2X,Non-Deceptive TL Trap
+122,1,46,0.047413,1200,0,2X,Non-Deceptive TL Trap
+122,2,15,0.012125,1200,1,2X,Non-Deceptive TL Trap
+122,3,44,0.023758,1200,0,2X,Non-Deceptive TL Trap
+122,4,14,0.007704,1200,1,2X,Non-Deceptive TL Trap
+122,5,17,0.009122,1200,1,2X,Non-Deceptive TL Trap
+122,6,15,0.008168,1200,1,2X,Non-Deceptive TL Trap
+122,7,15,0.008346,1200,1,2X,Non-Deceptive TL Trap
+122,8,19,0.010064,1200,1,2X,Non-Deceptive TL Trap
+122,9,44,0.020666,1200,0,2X,Non-Deceptive TL Trap
+122,10,46,0.021064,1200,0,2X,Non-Deceptive TL Trap
+123,1,16,0.025487,1280,1,2X,Non-Deceptive TL Trap
+123,2,16,0.017376,1280,1,2X,Non-Deceptive TL Trap
+123,3,45,0.029727,1280,0,2X,Non-Deceptive TL Trap
+123,4,49,0.024963,1280,0,2X,Non-Deceptive TL Trap
+123,5,15,0.008692,1280,1,2X,Non-Deceptive TL Trap
+123,6,44,0.021500,1280,0,2X,Non-Deceptive TL Trap
+123,7,45,0.022024,1280,0,2X,Non-Deceptive TL Trap
+123,8,16,0.009471,1280,1,2X,Non-Deceptive TL Trap
+123,9,17,0.009469,1280,1,2X,Non-Deceptive TL Trap
+123,10,16,0.008829,1280,1,2X,Non-Deceptive TL Trap
+124,1,13,0.024475,1600,1,2X,Non-Deceptive TL Trap
+124,2,17,0.022114,1600,1,2X,Non-Deceptive TL Trap
+124,3,44,0.034107,1600,0,2X,Non-Deceptive TL Trap
+124,4,44,0.031152,1600,0,2X,Non-Deceptive TL Trap
+124,5,44,0.035615,1600,0,2X,Non-Deceptive TL Trap
+124,6,14,0.015369,1600,1,2X,Non-Deceptive TL Trap
+124,7,15,0.012190,1600,1,2X,Non-Deceptive TL Trap
+124,8,45,0.029926,1600,0,2X,Non-Deceptive TL Trap
+124,9,15,0.011553,1600,1,2X,Non-Deceptive TL Trap
+124,10,16,0.012181,1600,1,2X,Non-Deceptive TL Trap
+125,1,15,0.024454,2000,1,2X,Non-Deceptive TL Trap
+125,2,18,0.026695,2000,1,2X,Non-Deceptive TL Trap
+125,3,16,0.018158,2000,1,2X,Non-Deceptive TL Trap
+125,4,16,0.015190,2000,1,2X,Non-Deceptive TL Trap
+125,5,15,0.013653,2000,1,2X,Non-Deceptive TL Trap
+125,6,17,0.015404,2000,1,2X,Non-Deceptive TL Trap
+125,7,17,0.015305,2000,1,2X,Non-Deceptive TL Trap
+125,8,17,0.015166,2000,1,2X,Non-Deceptive TL Trap
+125,9,13,0.011869,2000,1,2X,Non-Deceptive TL Trap
+125,10,17,0.015249,2000,1,2X,Non-Deceptive TL Trap
+126,1,14,0.024484,1800,1,2X,Non-Deceptive TL Trap
+126,2,19,0.022791,1800,1,2X,Non-Deceptive TL Trap
+126,3,14,0.014873,1800,1,2X,Non-Deceptive TL Trap
+126,4,16,0.014833,1800,1,2X,Non-Deceptive TL Trap
+126,5,18,0.015127,1800,1,2X,Non-Deceptive TL Trap
+126,6,12,0.009913,1800,1,2X,Non-Deceptive TL Trap
+126,7,17,0.014036,1800,1,2X,Non-Deceptive TL Trap
+126,8,44,0.030295,1800,0,2X,Non-Deceptive TL Trap
+126,9,44,0.029865,1800,0,2X,Non-Deceptive TL Trap
+126,10,16,0.012832,1800,1,2X,Non-Deceptive TL Trap
+127,1,16,0.033077,1800,1,2X,Non-Deceptive TL Trap
+127,2,15,0.019583,1800,1,2X,Non-Deceptive TL Trap
+127,3,19,0.019240,1800,1,2X,Non-Deceptive TL Trap
+127,4,18,0.015394,1800,1,2X,Non-Deceptive TL Trap
+127,5,17,0.013529,1800,1,2X,Non-Deceptive TL Trap
+127,6,17,0.013594,1800,1,2X,Non-Deceptive TL Trap
+127,7,44,0.030293,1800,0,2X,Non-Deceptive TL Trap
+127,8,18,0.014303,1800,1,2X,Non-Deceptive TL Trap
+127,9,14,0.011317,1800,1,2X,Non-Deceptive TL Trap
+127,10,15,0.011939,1800,1,2X,Non-Deceptive TL Trap
+128,1,49,0.000747,10,0,UX,Non-Deceptive TL Trap
+128,2,39,0.000547,10,0,UX,Non-Deceptive TL Trap
+128,3,49,0.000564,10,0,UX,Non-Deceptive TL Trap
+128,4,40,0.000461,10,0,UX,Non-Deceptive TL Trap
+128,5,39,0.000617,10,0,UX,Non-Deceptive TL Trap
+128,6,52,0.000824,10,0,UX,Non-Deceptive TL Trap
+128,7,42,0.000557,10,0,UX,Non-Deceptive TL Trap
+128,8,49,0.000700,10,0,UX,Non-Deceptive TL Trap
+128,9,85,0.001120,10,0,UX,Non-Deceptive TL Trap
+128,10,57,0.000739,10,0,UX,Non-Deceptive TL Trap
+129,1,43,0.013128,160,1,UX,Non-Deceptive TL Trap
+129,2,44,0.010607,160,1,UX,Non-Deceptive TL Trap
+129,3,32,0.006872,160,1,UX,Non-Deceptive TL Trap
+129,4,75,0.011037,160,0,UX,Non-Deceptive TL Trap
+129,5,29,0.004804,160,1,UX,Non-Deceptive TL Trap
+129,6,35,0.005599,160,1,UX,Non-Deceptive TL Trap
+129,7,42,0.005764,160,1,UX,Non-Deceptive TL Trap
+129,8,46,0.005973,160,1,UX,Non-Deceptive TL Trap
+129,9,35,0.004489,160,1,UX,Non-Deceptive TL Trap
+129,10,33,0.003720,160,1,UX,Non-Deceptive TL Trap
+130,1,44,0.005477,80,1,UX,Non-Deceptive TL Trap
+130,2,48,0.005499,80,1,UX,Non-Deceptive TL Trap
+130,3,37,0.004790,80,1,UX,Non-Deceptive TL Trap
+130,4,27,0.003073,80,1,UX,Non-Deceptive TL Trap
+130,5,30,0.003426,80,1,UX,Non-Deceptive TL Trap
+130,6,35,0.003789,80,1,UX,Non-Deceptive TL Trap
+130,7,90,0.007021,80,0,UX,Non-Deceptive TL Trap
+130,8,100,0.006587,80,0,UX,Non-Deceptive TL Trap
+130,9,66,0.004563,80,0,UX,Non-Deceptive TL Trap
+130,10,70,0.004150,80,0,UX,Non-Deceptive TL Trap
+131,1,81,0.015083,120,0,UX,Non-Deceptive TL Trap
+131,2,32,0.005676,120,1,UX,Non-Deceptive TL Trap
+131,3,83,0.009649,120,0,UX,Non-Deceptive TL Trap
+131,4,85,0.009851,120,0,UX,Non-Deceptive TL Trap
+131,5,48,0.005709,120,1,UX,Non-Deceptive TL Trap
+131,6,40,0.004487,120,1,UX,Non-Deceptive TL Trap
+131,7,48,0.005364,120,1,UX,Non-Deceptive TL Trap
+131,8,49,0.005007,120,1,UX,Non-Deceptive TL Trap
+131,9,73,0.005922,120,0,UX,Non-Deceptive TL Trap
+131,10,31,0.002926,120,1,UX,Non-Deceptive TL Trap
+132,1,38,0.010090,140,1,UX,Non-Deceptive TL Trap
+132,2,43,0.009607,140,1,UX,Non-Deceptive TL Trap
+132,3,29,0.006059,140,1,UX,Non-Deceptive TL Trap
+132,4,75,0.010759,140,0,UX,Non-Deceptive TL Trap
+132,5,63,0.007588,140,1,UX,Non-Deceptive TL Trap
+132,6,35,0.004512,140,1,UX,Non-Deceptive TL Trap
+132,7,33,0.004498,140,1,UX,Non-Deceptive TL Trap
+132,8,35,0.004097,140,1,UX,Non-Deceptive TL Trap
+132,9,71,0.006696,140,0,UX,Non-Deceptive TL Trap
+132,10,36,0.003773,140,1,UX,Non-Deceptive TL Trap
+133,1,34,0.011215,160,1,UX,Non-Deceptive TL Trap
+133,2,40,0.009751,160,1,UX,Non-Deceptive TL Trap
+133,3,35,0.007669,160,1,UX,Non-Deceptive TL Trap
+133,4,40,0.007866,160,1,UX,Non-Deceptive TL Trap
+133,5,66,0.009068,160,0,UX,Non-Deceptive TL Trap
+133,6,37,0.005633,160,1,UX,Non-Deceptive TL Trap
+133,7,28,0.004124,160,1,UX,Non-Deceptive TL Trap
+133,8,27,0.003704,160,1,UX,Non-Deceptive TL Trap
+133,9,34,0.004463,160,1,UX,Non-Deceptive TL Trap
+133,10,35,0.004332,160,1,UX,Non-Deceptive TL Trap
+134,1,38,0.000496,10,0,2X,Deceptive TL Trap
+134,2,50,0.000529,10,0,2X,Deceptive TL Trap
+134,3,37,0.000404,10,0,2X,Deceptive TL Trap
+134,4,37,0.000400,10,0,2X,Deceptive TL Trap
+134,5,49,0.000664,10,0,2X,Deceptive TL Trap
+134,6,29,0.000417,10,0,2X,Deceptive TL Trap
+134,7,39,0.000473,10,0,2X,Deceptive TL Trap
+134,8,29,0.000323,10,0,2X,Deceptive TL Trap
+134,9,37,0.000410,10,0,2X,Deceptive TL Trap
+134,10,44,0.000470,10,0,2X,Deceptive TL Trap
+135,1,50,0.006376,100,0,2X,Deceptive TL Trap
+135,2,51,0.005934,100,0,2X,Deceptive TL Trap
+135,3,48,0.004628,100,0,2X,Deceptive TL Trap
+135,4,49,0.004535,100,0,2X,Deceptive TL Trap
+135,5,51,0.004438,100,0,2X,Deceptive TL Trap
+135,6,50,0.003957,100,0,2X,Deceptive TL Trap
+135,7,53,0.004031,100,0,2X,Deceptive TL Trap
+135,8,52,0.003732,100,0,2X,Deceptive TL Trap
+135,9,48,0.003237,100,0,2X,Deceptive TL Trap
+135,10,50,0.003375,100,0,2X,Deceptive TL Trap
+136,1,22,0.019850,1280,1,2X,Deceptive TL Trap
+136,2,15,0.011756,1280,1,2X,Deceptive TL Trap
+136,3,19,0.013942,1280,1,2X,Deceptive TL Trap
+136,4,50,0.029496,1280,0,2X,Deceptive TL Trap
+136,5,51,0.025127,1280,0,2X,Deceptive TL Trap
+136,6,15,0.008743,1280,1,2X,Deceptive TL Trap
+136,7,53,0.025892,1280,0,2X,Deceptive TL Trap
+136,8,21,0.012315,1280,1,2X,Deceptive TL Trap
+136,9,16,0.009313,1280,1,2X,Deceptive TL Trap
+136,10,19,0.010982,1280,1,2X,Deceptive TL Trap
+137,1,21,0.050686,2560,1,2X,Deceptive TL Trap
+137,2,18,0.025891,2560,1,2X,Deceptive TL Trap
+137,3,50,0.048786,2560,0,2X,Deceptive TL Trap
+137,4,20,0.022527,2560,1,2X,Deceptive TL Trap
+137,5,49,0.046389,2560,0,2X,Deceptive TL Trap
+137,6,18,0.019937,2560,1,2X,Deceptive TL Trap
+137,7,20,0.021789,2560,1,2X,Deceptive TL Trap
+137,8,52,0.049029,2560,0,2X,Deceptive TL Trap
+137,9,17,0.019167,2560,1,2X,Deceptive TL Trap
+137,10,17,0.018814,2560,1,2X,Deceptive TL Trap
+138,1,20,0.075494,5120,1,2X,Deceptive TL Trap
+138,2,19,0.044024,5120,1,2X,Deceptive TL Trap
+138,3,22,0.050445,5120,1,2X,Deceptive TL Trap
+138,4,18,0.041752,5120,1,2X,Deceptive TL Trap
+138,5,52,0.101191,5120,0,2X,Deceptive TL Trap
+138,6,16,0.035978,5120,1,2X,Deceptive TL Trap
+138,7,16,0.036537,5120,1,2X,Deceptive TL Trap
+138,8,18,0.040574,5120,1,2X,Deceptive TL Trap
+138,9,15,0.033882,5120,1,2X,Deceptive TL Trap
+138,10,18,0.040312,5120,1,2X,Deceptive TL Trap
+139,1,17,0.055817,3600,1,2X,Deceptive TL Trap
+139,2,17,0.031597,3600,1,2X,Deceptive TL Trap
+139,3,19,0.030345,3600,1,2X,Deceptive TL Trap
+139,4,20,0.031271,3600,1,2X,Deceptive TL Trap
+139,5,15,0.023786,3600,1,2X,Deceptive TL Trap
+139,6,20,0.031028,3600,1,2X,Deceptive TL Trap
+139,7,18,0.028100,3600,1,2X,Deceptive TL Trap
+139,8,18,0.028499,3600,1,2X,Deceptive TL Trap
+139,9,17,0.026739,3600,1,2X,Deceptive TL Trap
+139,10,13,0.020581,3600,1,2X,Deceptive TL Trap
+140,1,16,0.048525,3000,1,2X,Deceptive TL Trap
+140,2,16,0.027517,3000,1,2X,Deceptive TL Trap
+140,3,18,0.024876,3000,1,2X,Deceptive TL Trap
+140,4,18,0.024397,3000,1,2X,Deceptive TL Trap
+140,5,13,0.018116,3000,1,2X,Deceptive TL Trap
+140,6,16,0.021790,3000,1,2X,Deceptive TL Trap
+140,7,19,0.025521,3000,1,2X,Deceptive TL Trap
+140,8,19,0.024939,3000,1,2X,Deceptive TL Trap
+140,9,19,0.024534,3000,1,2X,Deceptive TL Trap
+140,10,18,0.023314,3000,1,2X,Deceptive TL Trap
+141,1,18,0.044328,2560,1,2X,Deceptive TL Trap
+141,2,20,0.029158,2560,1,2X,Deceptive TL Trap
+141,3,50,0.049173,2560,0,2X,Deceptive TL Trap
+141,4,19,0.021997,2560,1,2X,Deceptive TL Trap
+141,5,18,0.020672,2560,1,2X,Deceptive TL Trap
+141,6,18,0.020665,2560,1,2X,Deceptive TL Trap
+141,7,21,0.023453,2560,1,2X,Deceptive TL Trap
+141,8,22,0.024025,2560,1,2X,Deceptive TL Trap
+141,9,50,0.047083,2560,0,2X,Deceptive TL Trap
+141,10,19,0.020756,2560,1,2X,Deceptive TL Trap
+142,1,18,0.048669,2800,1,2X,Deceptive TL Trap
+142,2,21,0.031695,2800,1,2X,Deceptive TL Trap
+142,3,20,0.025168,2800,1,2X,Deceptive TL Trap
+142,4,18,0.022566,2800,1,2X,Deceptive TL Trap
+142,5,21,0.026665,2800,1,2X,Deceptive TL Trap
+142,6,14,0.017855,2800,1,2X,Deceptive TL Trap
+142,7,51,0.053484,2800,0,2X,Deceptive TL Trap
+142,8,20,0.024100,2800,1,2X,Deceptive TL Trap
+142,9,22,0.026299,2800,1,2X,Deceptive TL Trap
+142,10,16,0.019659,2800,1,2X,Deceptive TL Trap
+143,1,53,0.089246,2700,0,2X,Deceptive TL Trap
+143,2,17,0.020474,2700,1,2X,Deceptive TL Trap
+143,3,51,0.052791,2700,0,2X,Deceptive TL Trap
+143,4,52,0.054415,2700,0,2X,Deceptive TL Trap
+143,5,24,0.027883,2700,1,2X,Deceptive TL Trap
+143,6,21,0.024534,2700,1,2X,Deceptive TL Trap
+143,7,20,0.023379,2700,1,2X,Deceptive TL Trap
+143,8,20,0.023513,2700,1,2X,Deceptive TL Trap
+143,9,19,0.022344,2700,1,2X,Deceptive TL Trap
+143,10,19,0.022472,2700,1,2X,Deceptive TL Trap
+144,1,18,0.048525,2750,1,2X,Deceptive TL Trap
+144,2,18,0.028314,2750,1,2X,Deceptive TL Trap
+144,3,18,0.023042,2750,1,2X,Deceptive TL Trap
+144,4,16,0.020103,2750,1,2X,Deceptive TL Trap
+144,5,20,0.025070,2750,1,2X,Deceptive TL Trap
+144,6,18,0.022231,2750,1,2X,Deceptive TL Trap
+144,7,17,0.020882,2750,1,2X,Deceptive TL Trap
+144,8,20,0.023786,2750,1,2X,Deceptive TL Trap
+144,9,16,0.019279,2750,1,2X,Deceptive TL Trap
+144,10,18,0.021368,2750,1,2X,Deceptive TL Trap
+145,1,52,0.087231,2650,0,2X,Deceptive TL Trap
+145,2,17,0.020461,2650,1,2X,Deceptive TL Trap
+145,3,53,0.052866,2650,0,2X,Deceptive TL Trap
+145,4,50,0.050891,2650,0,2X,Deceptive TL Trap
+145,5,50,0.049957,2650,0,2X,Deceptive TL Trap
+145,6,18,0.021108,2650,1,2X,Deceptive TL Trap
+145,7,26,0.028375,2650,1,2X,Deceptive TL Trap
+145,8,21,0.023789,2650,1,2X,Deceptive TL Trap
+145,9,21,0.024076,2650,1,2X,Deceptive TL Trap
+145,10,18,0.020809,2650,1,2X,Deceptive TL Trap
+146,1,19,0.051352,2780,1,2X,Deceptive TL Trap
+146,2,20,0.030521,2780,1,2X,Deceptive TL Trap
+146,3,16,0.021208,2780,1,2X,Deceptive TL Trap
+146,4,15,0.018515,2780,1,2X,Deceptive TL Trap
+146,5,51,0.052840,2780,0,2X,Deceptive TL Trap
+146,6,19,0.022856,2780,1,2X,Deceptive TL Trap
+146,7,17,0.020661,2780,1,2X,Deceptive TL Trap
+146,8,16,0.019288,2780,1,2X,Deceptive TL Trap
+146,9,22,0.026243,2780,1,2X,Deceptive TL Trap
+146,10,17,0.020364,2780,1,2X,Deceptive TL Trap
+147,1,52,0.000469,10,0,UX,Deceptive TL Trap
+147,2,45,0.000346,10,0,UX,Deceptive TL Trap
+147,3,44,0.000337,10,0,UX,Deceptive TL Trap
+147,4,47,0.000402,10,0,UX,Deceptive TL Trap
+147,5,39,0.000305,10,0,UX,Deceptive TL Trap
+147,6,70,0.000668,10,0,UX,Deceptive TL Trap
+147,7,37,0.000296,10,0,UX,Deceptive TL Trap
+147,8,62,0.000607,10,0,UX,Deceptive TL Trap
+147,9,43,0.000334,10,0,UX,Deceptive TL Trap
+147,10,67,0.000612,10,0,UX,Deceptive TL Trap
+148,1,100,0.022586,160,0,UX,Deceptive TL Trap
+148,2,90,0.015652,160,0,UX,Deceptive TL Trap
+148,3,100,0.016647,160,0,UX,Deceptive TL Trap
+148,4,100,0.010961,160,0,UX,Deceptive TL Trap
+148,5,100,0.010902,160,0,UX,Deceptive TL Trap
+148,6,100,0.009300,160,0,UX,Deceptive TL Trap
+148,7,100,0.008926,160,0,UX,Deceptive TL Trap
+148,8,100,0.007925,160,0,UX,Deceptive TL Trap
+148,9,100,0.008582,160,0,UX,Deceptive TL Trap
+148,10,100,0.008963,160,0,UX,Deceptive TL Trap
+149,1,100,0.111214,1280,0,UX,Deceptive TL Trap
+149,2,100,0.072910,1280,0,UX,Deceptive TL Trap
+149,3,100,0.074615,1280,0,UX,Deceptive TL Trap
+149,4,100,0.074704,1280,0,UX,Deceptive TL Trap
+149,5,100,0.072560,1280,0,UX,Deceptive TL Trap
+149,6,100,0.070679,1280,0,UX,Deceptive TL Trap
+149,7,100,0.074839,1280,0,UX,Deceptive TL Trap
+149,8,100,0.073903,1280,0,UX,Deceptive TL Trap
+149,9,100,0.075237,1280,0,UX,Deceptive TL Trap
+149,10,100,0.076426,1280,0,UX,Deceptive TL Trap
+150,1,100,0.337918,5120,0,UX,Deceptive TL Trap
+150,2,100,0.299749,5120,0,UX,Deceptive TL Trap
+150,3,100,0.311286,5120,0,UX,Deceptive TL Trap
+150,4,100,0.317766,5120,0,UX,Deceptive TL Trap
+150,5,100,0.307492,5120,0,UX,Deceptive TL Trap
+150,6,100,0.304744,5120,0,UX,Deceptive TL Trap
+150,7,100,0.310327,5120,0,UX,Deceptive TL Trap
+150,8,100,0.294437,5120,0,UX,Deceptive TL Trap
+150,9,100,0.304320,5120,0,UX,Deceptive TL Trap
+150,10,100,0.300974,5120,0,UX,Deceptive TL Trap
+151,1,500,1.385984,5120,0,UX,Deceptive TL Trap
+151,2,500,1.341274,5120,0,UX,Deceptive TL Trap
+151,3,500,1.347136,5120,0,UX,Deceptive TL Trap
+151,4,500,1.318987,5120,0,UX,Deceptive TL Trap
+151,5,500,1.345186,5120,0,UX,Deceptive TL Trap
+151,6,500,1.338401,5120,0,UX,Deceptive TL Trap
+151,7,500,1.364046,5120,0,UX,Deceptive TL Trap
+151,8,500,1.379078,5120,0,UX,Deceptive TL Trap
+151,9,500,1.327322,5120,0,UX,Deceptive TL Trap
+151,10,500,1.364376,5120,0,UX,Deceptive TL Trap
+152,1,447,0.298511,1280,0,UX,Deceptive TL Trap
+152,2,556,0.320308,1280,0,UX,Deceptive TL Trap
+152,3,423,0.259040,1280,1,UX,Deceptive TL Trap
+152,4,435,0.279518,1280,1,UX,Deceptive TL Trap
+152,5,562,0.323425,1280,0,UX,Deceptive TL Trap
+152,6,703,0.425832,1280,0,UX,Deceptive TL Trap
+152,7,617,0.375599,1280,1,UX,Deceptive TL Trap
+152,8,484,0.311660,1280,1,UX,Deceptive TL Trap
+152,9,605,0.405946,1280,1,UX,Deceptive TL Trap
+152,10,610,0.392674,1280,0,UX,Deceptive TL Trap
+153,1,491,0.647314,2560,1,UX,Deceptive TL Trap
+153,2,643,0.790278,2560,1,UX,Deceptive TL Trap
+153,3,619,0.761656,2560,1,UX,Deceptive TL Trap
+153,4,615,0.790333,2560,1,UX,Deceptive TL Trap
+153,5,588,0.814168,2560,1,UX,Deceptive TL Trap
+153,6,579,0.746693,2560,1,UX,Deceptive TL Trap
+153,7,658,0.830138,2560,0,UX,Deceptive TL Trap
+153,8,544,0.667916,2560,1,UX,Deceptive TL Trap
+153,9,599,0.754783,2560,1,UX,Deceptive TL Trap
+153,10,637,0.836618,2560,1,UX,Deceptive TL Trap
+154,1,417,0.469180,2000,1,UX,Deceptive TL Trap
+154,2,482,0.494602,2000,1,UX,Deceptive TL Trap
+154,3,568,0.530721,2000,0,UX,Deceptive TL Trap
+154,4,585,0.611910,2000,1,UX,Deceptive TL Trap
+154,5,429,0.436872,2000,1,UX,Deceptive TL Trap
+154,6,585,0.571880,2000,1,UX,Deceptive TL Trap
+154,7,507,0.517668,2000,1,UX,Deceptive TL Trap
+154,8,494,0.491246,2000,0,UX,Deceptive TL Trap
+154,9,593,0.608862,2000,1,UX,Deceptive TL Trap
+154,10,723,0.682886,2000,0,UX,Deceptive TL Trap
+155,1,817,0.854949,2100,1,UX,Deceptive TL Trap
+155,2,635,0.698896,2100,1,UX,Deceptive TL Trap
+155,3,649,0.678624,2100,1,UX,Deceptive TL Trap
+155,4,850,0.899438,2100,1,UX,Deceptive TL Trap
+155,5,634,0.669891,2100,1,UX,Deceptive TL Trap
+155,6,426,0.424681,2100,1,UX,Deceptive TL Trap
+155,7,456,0.467416,2100,1,UX,Deceptive TL Trap
+155,8,574,0.663579,2100,1,UX,Deceptive TL Trap
+155,9,561,0.555140,2100,0,UX,Deceptive TL Trap
+155,10,544,0.580723,2100,1,UX,Deceptive TL Trap
+156,1,619,0.656215,2050,1,UX,Deceptive TL Trap
+156,2,504,0.474585,2050,1,UX,Deceptive TL Trap
+156,3,521,0.509000,2050,1,UX,Deceptive TL Trap
+156,4,602,0.617500,2050,1,UX,Deceptive TL Trap
+156,5,495,0.476791,2050,1,UX,Deceptive TL Trap
+156,6,537,0.569658,2050,1,UX,Deceptive TL Trap
+156,7,601,0.553797,2050,1,UX,Deceptive TL Trap
+156,8,759,0.793046,2050,1,UX,Deceptive TL Trap
+156,9,533,0.509662,2050,1,UX,Deceptive TL Trap
+156,10,733,0.706921,2050,1,UX,Deceptive TL Trap
+157,1,572,0.572153,2020,1,UX,Deceptive TL Trap
+157,2,550,0.533097,2020,1,UX,Deceptive TL Trap
+157,3,548,0.577793,2020,1,UX,Deceptive TL Trap
+157,4,518,0.516225,2020,1,UX,Deceptive TL Trap
+157,5,454,0.480708,2020,1,UX,Deceptive TL Trap
+157,6,778,0.764814,2020,1,UX,Deceptive TL Trap
+157,7,647,0.628505,2020,0,UX,Deceptive TL Trap
+157,8,497,0.491305,2020,1,UX,Deceptive TL Trap
+157,9,411,0.423469,2020,1,UX,Deceptive TL Trap
+157,10,679,0.634667,2020,0,UX,Deceptive TL Trap
+158,1,458,0.497422,2030,1,UX,Deceptive TL Trap
+158,2,631,0.594325,2030,1,UX,Deceptive TL Trap
+158,3,663,0.648455,2030,1,UX,Deceptive TL Trap
+158,4,451,0.420711,2030,0,UX,Deceptive TL Trap
+158,5,577,0.578841,2030,1,UX,Deceptive TL Trap
+158,6,483,0.451560,2030,1,UX,Deceptive TL Trap
+158,7,586,0.592396,2030,0,UX,Deceptive TL Trap
+158,8,595,0.599910,2030,0,UX,Deceptive TL Trap
+158,9,514,0.476696,2030,1,UX,Deceptive TL Trap
+158,10,560,0.550329,2030,1,UX,Deceptive TL Trap

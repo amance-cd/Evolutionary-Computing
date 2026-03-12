@@ -1,7 +1,7 @@
 #include "dna.h"
 #include "crossovers.h"
 #include "competition.h"
-#include "inputs.h"
+#include "inputs_outputs.h"
 
 #include <time.h>
 
@@ -85,7 +85,13 @@
 int main() {
     Inputs inputs;
     int use_previous = 0;
-    
+    int population_size;
+    printf("\n\nEnter population size: ");
+    scanf("%d", &population_size);
+    while (population_size <= 0 || population_size % 2 != 0) {
+        printf("\n Population size must be a positive even number. Please enter again : ");
+        scanf("%d", &population_size);
+    }
     if (load_inputs_from_file(&inputs, "previous_inputs.txt")) {
         printf("\nPrevious parameters found : ");
         print_inputs(inputs);
@@ -98,7 +104,7 @@ int main() {
         save_inputs_to_file(inputs, "previous_inputs.txt");
     }
 
-    int population_size = inputs.population_size;
+
     int generations = inputs.generations;
     int fitness_function_type = inputs.fitness_function_type;
     float crossover_probability = inputs.crossover_probability;
@@ -116,32 +122,54 @@ int main() {
             scanf("%d %f", &k, &d);
         }
     }
-    int gen = 0;
-    Population *population = generate_population(population_size, gen, k, d, fitness_function_type);
-    gen++;
-    float current_fitness = population_mean_fitness(population);
-    printf("\n\nInitial population mean fitness : %.2f", current_fitness);
-
-    clock_t start_time = clock();
-    while (!check_ending(population, gen) && (gen<generations) && (current_fitness<40)){
-        printf("\n\nGeneration %d\n", gen);
-        shuffle_population(population);
-
-        Population *offspring_population = (Population *)malloc(sizeof(Population));
-        generate_offsprings(population, offspring_population, gen, crossover_probability, k, d, fitness_function_type);
-        
-        Population *new_population = (Population *)malloc(sizeof(Population));
-        family_competition(population, offspring_population, new_population);
-
-        current_fitness = population_mean_fitness(new_population);
-        printf("New population mean fitness : %.2f\n", current_fitness);
-        
-        population = new_population;
+    int num_runs = 10;
+    int next_set_id = get_next_set_id("results.csv");
+    int successful_runs = 0;
+    for (int run = 1; run <= num_runs; run++) {
+        printf("\n\n=============== RUN %d ===============\n", run);
+        int gen = 0;
+        Population *population = generate_population(population_size, gen, k, d, fitness_function_type);
         gen++;
+        float current_fitness = population_mean_fitness(population);
+        printf("Initial population mean fitness : %.2f\n", current_fitness);
+
+        clock_t start_time = clock();
+        int stagnation_counter = 0;
+        float max_fitness = population_max_fitness(population);
+
+        while ((stagnation_counter < 20) && (gen < generations) && (max_fitness < 40.0)){
+            shuffle_population(population);
+
+            Population *offspring_population = (Population *)malloc(sizeof(Population));
+            generate_offsprings(population, offspring_population, gen, crossover_probability, k, d, fitness_function_type);
+            
+            Population *new_population = (Population *)malloc(sizeof(Population));
+            int improved = family_competition(population, offspring_population, new_population);
+
+            if (improved) {
+                stagnation_counter = 0;
+            } else {
+                stagnation_counter++;
+            }
+
+            current_fitness = population_mean_fitness(new_population);
+            max_fitness = population_max_fitness(new_population);
+            
+            population = new_population;
+            gen++;
+        }
+        clock_t end_time = clock();
+        double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+        if (max_fitness ==40.0) successful_runs++;
+        printf("\nRun %d finished in %d generations.\n", run, gen);
+        printf("Execution Time: %f seconds\n", time_spent);
+        printf("Final max fitness: %.2f\n", max_fitness);
+
+        append_run_to_csv("results.csv", next_set_id, run, gen, time_spent, max_fitness, population_size, crossover_probability, fitness_function_type);
+
+        free_population(population);
     }
-    clock_t end_time = clock();
-    double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-    printf("\n\nExecution Time: %f seconds\n", time_spent);
-    free_population(population);
+    printf("%d Succesful runs\n", successful_runs);
+    printf("\nResults saved to results.csv\n");
     return 0;   
 }

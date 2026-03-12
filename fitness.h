@@ -9,7 +9,7 @@
 float count_ones(DNA *member, int k, float d);
 float deceptive_trap_fitness(DNA *member, int k, float d);
 float population_mean_fitness(Population *population);
-int check_ending(Population *population, int current_gen);
+float population_max_fitness(Population *population);
 float evaluate_fitness(DNA *member, int k, float d, int type);
 
 #endif

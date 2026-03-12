@@ -12,7 +12,7 @@ void two_pt_crossover(DNA *parent1, DNA *parent2, DNA *child1, DNA *child2, floa
         pt2 = pt1;
         pt1 = temp;
     }
-    //printf("pt1 : %d\npt2 : %d\n", pt1, pt2); to know where the crossover happens
+    //printf("pt1 : %d\npt2 : %d\n", pt1, pt2); //to know where the crossover happens
     int i;
     for(i = pt1; i<=pt2; i++){
         child1->dna[i] = parent1->dna[i];
