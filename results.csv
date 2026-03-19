@@ -1,4 +1,4 @@
-Set,Run,Generations,Execution Time (s),Population Size,Success (Max=40),Crossover,Fitness Function
+Set,Run,Generations,Execution Time (s),Population Size,Success,Crossover,Fitness Function
 1,1,41,0.000372,10,0,2X,Counting Ones
 1,2,30,0.000288,10,0,2X,Counting Ones
 1,3,42,0.000376,10,0,2X,Counting Ones
@@ -1609,3 +1609,13 @@ Set,Run,Generations,Execution Time (s),Population Size,Success (Max=40),Crossove
 161,8,21,0.015243,2010,0,UX,Deceptive TL Trap
 161,9,21,0.015300,2010,0,UX,Deceptive TL Trap
 161,10,21,0.015258,2010,0,UX,Deceptive TL Trap
+162,1,236,0.987950,10000,0,2X,Deceptive Non-TL Trap
+162,2,213,0.881464,10000,0,2X,Deceptive Non-TL Trap
+162,3,270,1.103293,10000,0,2X,Deceptive Non-TL Trap
+162,4,340,1.367044,10000,0,2X,Deceptive Non-TL Trap
+162,5,161,0.622655,10000,0,2X,Deceptive Non-TL Trap
+162,6,179,0.727187,10000,0,2X,Deceptive Non-TL Trap
+162,7,140,0.585436,10000,0,2X,Deceptive Non-TL Trap
+162,8,186,0.752095,10000,0,2X,Deceptive Non-TL Trap
+162,9,154,0.632372,10000,0,2X,Deceptive Non-TL Trap
+162,10,263,1.068022,10000,0,2X,Deceptive Non-TL Trap
