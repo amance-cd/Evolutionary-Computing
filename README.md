@@ -2,6 +2,10 @@ Project done for the Evolutionary Computing course I am attending at Utrecht Uni
 
 The project consists in creating a evolutionary algorithm in order to study the impact of linkage and deceptivity in the fitness functions on the performance of the crossover operators. 
 
+Compilation : make
+
+Execution : ./ga then choose parameters, if not the first run using previous parameters directly is possible
+
 General description : 
 
 This project relies on a bit-oriented-dna (length 40), each member having its own dna, randomly generated for the first generation, and a mix of parents dna for the following generations. The offspring dna is determined by a crossover, Uniform or 2-point (detailed below). Each member is then given a fitness grade depending on its dna (the different fitness functions are detailed below). The algorithm uses family competition between the 2 parents and the 2 offsprings to keep selection pressure as well as a fixed population size. 
